@@ -1,4 +1,5 @@
 import { productPageCategories } from "../Data/forproductpage/categories.js";
+import { links } from "../Data/forproductpage/paragraphs.js";
 import { products } from "../Data/forproductpage/products.js";
 import { selectAnElement, toggleDropdownUi } from "./reuseablefuns.js";
 
@@ -14,7 +15,8 @@ function createCategoriesItems(category) {
     "py-3",
     "category-drop-down",
     "text-gray-700",
-    "font-bold"
+    "font-bold",
+    "z-30"
   );
   if (category.subCategories.length) {
     const i = document.createElement("i");
@@ -207,7 +209,7 @@ function generateProductCards(product) {
 
 // for sidebar category lists
 
-toggleDropdownUi(
+toggleDropdownUi( 
   selectAnElement("#side-bar-category #dropdown-btn-open"),
   selectAnElement("#side-bar-category #dropdown-btn-close"),
   selectAnElement("#product-page-sidebar-category-lists")
@@ -226,3 +228,46 @@ const assuredDetailsContainer = selectAnElement('#assured-details');
 assuredDetailsOpenBtn.addEventListener('click',()=>{
    assuredDetailsContainer.classList.toggle('hidden');
 });
+
+//for brands
+toggleDropdownUi(
+   selectAnElement('#brand #dropdown-btn-open'),
+   selectAnElement('#brand #dropdown-btn-close'),
+   selectAnElement('#brand #brands-container'),
+);
+
+// for discount
+toggleDropdownUi(
+   selectAnElement('#discount #dropdown-btn-open'),
+   selectAnElement('#discount #dropdown-btn-close'),
+   selectAnElement('#discount #discount-list'),
+);
+
+// for customer rating
+toggleDropdownUi(
+   selectAnElement('#customer-rating #dropdown-btn-open'),
+   selectAnElement('#customer-rating #dropdown-btn-close'),
+   selectAnElement('#customer-rating #customer-rating-list'),
+);
+
+// for offers
+toggleDropdownUi(
+   selectAnElement('#offers #dropdown-btn-open'),
+   selectAnElement('#offers #dropdown-btn-close'),
+   selectAnElement('#offers #offers-list'),
+);
+
+// for Availability
+toggleDropdownUi(
+   selectAnElement('#availability #dropdown-btn-open'),
+   selectAnElement('#availability #dropdown-btn-close'),
+   selectAnElement('#availability #availability-list'),
+);
+
+//for paragraph section
+const linksContainer = selectAnElement('#paragraphs #links-container');
+links.fore
+
+function generateLinks(link){
+   linksContainer.innerHtml += `<a href='#'>${link}</a>`;
+}
