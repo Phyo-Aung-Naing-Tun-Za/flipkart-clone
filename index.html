@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flipkart</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/fontawsome.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/homepage.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+  </head>
+  <body
+    class="w-screen text-gray-600 bg-gray-100 tracking-wide relative"
+  >
+    <!-- navbar -->
+    <nav class="z-[1000] py-3 px-3 bg-white sticky top-0">
+      <div
+        class="flex items-center justify-around lg:justify-center lg:gap-[50px]"
+      >
+        <div class="flex">
+          <div
+            class="md-login-btn hidden p-2 me-7 gap-2 justify-center items-center"
+          >
+            <img
+              id="side-bar-open"
+              src="./images/for-homepage/side-images/humbargermenuicon.svg"
+              alt="menu"
+            />
+          </div>
+          <!-- logo -->
+          <div class="">
+            <img
+              width="130px"
+              height="40px"
+              src="./images/for-homepage/side-images/fkheaderlogo.svg"
+              alt="logo"
+            />
+          </div>
+          <!-- search box  -->
+
+          <form class="relative nav-search-box-lg ms-7 w-[480px]" action="#">
+            <i
+              class="fa-solid fa-magnifying-glass absolute text-lg text-gray-500 left-3 top-[17%]"
+            ></i>
+            <div>
+              <input
+                class="bg-blue-100 w-full h-[40px] border border-gray-200 rounded-md ps-10 p-2 "
+                type="text"
+                placeholder="Search for Products, Brands and More"
+              />
+            </div>
+          </form>
+        </div>
+        <div class="flex items-center lg:gap-[40px] gap-2 md:gap-6">
+          <div
+            class="md-login-btn hidden p-2 gap-2 justify-center items-center"
+          >
+            <i class="fa-regular fa-circle-user text-lg"></i>
+            <span class="tracking-wide">Login</span>
+          </div>
+          <div class="relative rounded-md login-btn hover:bg-blue-600">
+            <div class="btn p-2 flex gap-2 justify-center items-center">
+              <i class="fa-regular fa-circle-user text-lg"></i>
+              <span class="tracking-wide">Login</span>
+              <i class="fa-solid fa-angle-down login-arrow-animate"></i>
+            </div>
+            <!-- dropdown -->
+            <div style="box-shadow:  0px 0px 10px 0px #8080804d;"
+              class="nav-login-dropdown hidden w-[280px]  bg-white rounded-md absolute top-[40px] left-[1px]"
+            >
+            <div
+            class="text-gray-700 flex justify-between p-3 text-lg border-b-gray-300"
+          >
+            <h1>New customer?</h1>
+            <h1 class="text-blue-700 font-semibold">
+              <a href="#">Sign up</a>
+            </h1>
+          </div>
+          <ul class="text-sm flex flex-col border-t-2">
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="#" class="flex items-center gap-3">
+                <img src="./images/for-homepage/side-images/profile.svg" alt="profile" />
+                My Profile
+              </a>
+            </li>
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="#" class="flex items-center gap-3">
+                <img
+                  src="./images/for-homepage/side-images/fkplus-img.svg"
+                  alt="fkplus-img"
+                />
+                Flipkart Plus Zone
+              </a>
+            </li>
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="#" class="flex items-center gap-3">
+                <img src="./images/for-homepage/side-images/orders.svg" alt="orders" />
+                Orders
+              </a>
+            </li>
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="#" class="flex items-center gap-3">
+                <img src="./images/for-homepage/side-images/heart.svg" alt="whishlist" />
+                Wishlist
+              </a>
+            </li>
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="#" class="flex items-center gap-3">
+                <img src="./images/for-homepage/side-images/rewards.svg" alt="rewards" />
+                Rewards
+              </a>
+            </li>
+            <li class="hover:bg-gray-100 px-3 py-2">
+              <a href="pages/products.html" class="flex items-center gap-3">
+                <img
+                  src="./images/for-homepage/side-images/giftCard.svg"
+                  alt="giftCard"
+                />
+                Gift Cards
+              </a>
+            </li>
+          </ul>
+            </div>
+          </div>
+          <div
+            id="cart"
+            class="rounded-md py-2 flex gap-2 justify-center items-center"
+          >
+            <img src="./images/for-homepage/side-images/cartIcon.svg" alt="cart" />
+            <span class="tracking-wide">Cart</span>
+          </div>
+          <div
+            id="become-best-seller"
+            class="rounded-md py-2 flex gap-2 justify-center items-center"
+          >
+            <img src="./images/for-homepage/side-images/Store-Icon.svg" alt="cart" />
+            <span class="tracking-wide hidden lg:inline">Become a Seller</span>
+          </div>
+          <div
+            class="nav-help-btn relative hover:bg-gray-100 hover:border hover:border-gray-300 rounded-md p-2 flex gap-2 justify-center items-center"
+          >
+            <img
+              src="./images/for-homepage/side-images/header_3verticalDots-icon.svg"
+              alt=""
+            />
+            <!-- dropdown -->
+            <div
+              class="nav-help-dropdown hidden w-[230px] drop-shadow-lg bg-white rounded-md absolute top-[37px] right-[-1px]"
+            >
+              <ul class="text-sm flex flex-col border-t-2">
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      src="./images/for-homepage/side-images/notificationPreferencesIcon.svg"
+                      alt="noti"
+                    />
+                    Notification Preferences
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      src="./images/for-homepage/side-images/helpcenterIcon.svg"
+                      alt="fkplus-img"
+                    />
+                    24x7 Customer Care
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      src="./images/for-homepage/side-images/advertiseIcon.svg"
+                      alt="orders"
+                    />
+                    Advertise
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      src="./images/for-homepage/side-images/downloadAppIcon.svg"
+                      alt="whishlist"
+                    />
+                    Download App
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- search box for md-screen -->
+      <div>
+        <form class="relative hidden nav-search-box-md mt-3" action="#">
+          <i
+            class="fa-solid fa-magnifying-glass absolute text-lg text-gray-500 top-[30%] left-3"
+          ></i>
+          <div>
+            <input
+              class="bg-blue-100 w-full h-[40px] rounded-md ps-10 p-2 border"
+              type="text"
+              placeholder="Search for Products, Brands and More"
+            />
+          </div>
+        </form>
+      </div>
+    </nav>
+    <!-- side-bar -->
+    <aside
+      id="side-bar"
+      class="fixed hidden top-0 left-0 right-0 bottom-0 opacity-1 min-w-full"
+    >
+      <div class="bg-white shadow-black shadow-md w-9/12">
+        <ul>
+          <li
+            class="flex justify-between items-center bg-blue-600 text-white text-lg p-5"
+          >
+            <a href="#" class="block cursor-pointer">
+              <i class="fa-solid fa-user me-5"></i>
+              Login & Signup
+            </a>
+            <a class="block cursor-pointer" href="#">
+              <img
+                class="w-[20px]"
+                src="./images/for-homepage/side-images/logo_lite-icon.png"
+                alt="logo-lite"
+              />
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/coin-icon.png"
+                alt="coin"
+              />
+              SuperCoin Zone
+            </a>
+          </li>
+          <li class="px-3 py-2 border-t-0 border-b-gray-300 border">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/fkplus-img.svg"
+                alt="fkplus-img"
+              />
+              Flipkart Plus Zone
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/all-cat-menu-icon.webp"
+                alt="coin"
+              />
+              All Categories
+            </a>
+          </li>
+          <li class="px-3 py-2 border-t-0 border-b-gray-300 border">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/menu-icon.webp"
+                alt="fkplus-img"
+              />
+              More on Flipkart
+            </a>
+          </li>
+          <li class="px-3 py-2 border-t-0 border-b-gray-300 border">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/lang-icon.webp"
+                alt="fkplus-img"
+              />
+              Choose Language
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/offer-zone-icon.png"
+                alt="offer-zone"
+              />
+              Offer Zone
+            </a>
+          </li>
+          <li class="px-3 py-2 border-t-0 border-b-gray-300 border">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/sell-on-flipk-icon.png"
+                alt="fkplus-img"
+              />
+              Sell on Flipkart
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/myorder-icon.png"
+                alt="offer-zone"
+              />
+              My Orders
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/coupon-icon.png"
+                alt="offer-zone"
+              />
+              Coupons
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/cartIcon.svg"
+                alt="offer-zone"
+              />
+              My Cart
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/heart.svg"
+                alt="offer-zone"
+              />
+              My Wishlist
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/profile-icon.webp"
+                alt="offer-zone"
+              />
+              My Account
+            </a>
+          </li>
+          <li class="px-3 py-2 border-t-0 border-b-gray-300 border">
+            <a href="#" class="flex items-center gap-3">
+              <img
+                class="w-[20px] me-2"
+                src="./images/for-homepage/side-images/bell-icon.webp"
+                alt="fkplus-img"
+              />
+              My Notifications
+            </a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#">Help Center</a>
+          </li>
+          <li class="px-3 py-2">
+            <a href="#">Legal</a>
+          </li>
+        </ul>
+      </div>
+      <div id="side-bar-close" class="flex-auto"></div>
+    </aside>
+
+    <!-- categories -->
+    <section
+      id="categories-section"
+      class="flex gap-2 justify-around text-center  m-3 py-5 bg-white"
+    >
+      <!-- {{}} -->
+    </section>
+
+    <!-- carousel -->
+    <section id="default-carousel" class="relative mx-3" data-carousel="slide">
+      <!-- Carousel wrapper -->
+      <div class="relative h-[208px] overflow-hidden ">
+           <!-- Item 1 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./images/for-homepage/carousel-images/benq.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./images/for-homepage/carousel-images/holiday.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 3 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./images/for-homepage/carousel-images/lg.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 4 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./images/for-homepage/carousel-images/phone.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img src="./images/for-homepage/carousel-images/ticket.webp" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+          </div>
+          <!-- Item 6 -->
+          <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="./images/for-homepage/carousel-images/travel.jpeg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div style="background-color: rgba(128, 128, 128, 0.46);" class="absolute z-30 p-[2px] px-[3px] rounded-[10px]  flex -translate-x-1/2 bottom-5 left-1/2 space-x-2 rtl:space-x-reverse">
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="true" aria-label="Slide [6px]" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+          <button type="button" class="w-[6px] h-[6px]  rounded-full" aria-current="false" aria-label="Slide 6" data-carousel-slide-to="5"></button>
+      </div>
+      <!-- Slider controls -->
+      
+      <button  style="border-radius: 0px 5px 5px 0px" data-carousel-prev type="button" class="top-[27%] left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+          <span class="">
+            <i  class="fa fa-angle-left"></i>
+          </span>
+      </button>
+      <button  style="border-radius: 5px 0px 0px 5px" data-carousel-next type="button" class="top-[27%] right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+          <span class="">
+            <i  class="fa fa-angle-right"></i>
+          </span>
+        </button>
+    </section>
+
+    <!-- best of electronics -->
+    <section id="best-of-electronic" class="m-3 mt-5 flex justify-between">
+      <div class=" w-10/12 bg-white relative ">
+        <div class="flex justify-between items-center p-4">
+          <h1 class=" text-xl font-bold">Best of Electronics</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="electronic-product-container" class="px-4 flex gap-4 overflow-x-hidden scroll-smooth ">
+           <!-- {{}} -->
+        </div>
+        
+        <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px"  type="button" class="top-[35%] transition ease-in-out  left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+          <span class="">
+            <i  class="fa fa-angle-left"></i>
+          </span>
+      </button>
+      <button id="next-btn"  style="border-radius: 5px 0px 0px 5px"  type="button" class="top-[35%] transition ease-in-out right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+          <span class="">
+            <i  class="fa fa-angle-right"></i>
+          </span>
+      </button>    
+      </div>
+      <div class="bg-white w-[198px] py-4 overflow-hidden">
+        <a href="#">
+          <img class="w-full" src="./images/for-homepage/best-electronic-images/flight-ticket.webp" alt="flight-ticket">
+        </a>
+      </div>
+    </section>
+
+    <!-- Beauty,food,toy & more -->
+    <section style="padding-bottom: 10px;" id="beauty-food-toy" class="m-3 mt-5 bg-white relative">
+     
+        <div class="flex justify-between items-center p-4">
+          <h1 class=" text-xl font-bold">Beauty, Food, Toys & more</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="beauty-food-toy-container" class="px-4 pb-4 flex gap-4  overflow-x-hidden scroll-smooth ">
+           <!-- {{}} -->
+        </div>
+        <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px"  type="button" class="top-[35%] transition ease-in-out  left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+          <span class="">
+            <i  class="fa fa-angle-left"></i>
+          </span>
+      </button>
+      <button id="next-btn"  style="border-radius: 5px 0px 0px 5px"  type="button" class="top-[35%] transition ease-in-out right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+          <span class="">
+            <i  class="fa fa-angle-right"></i>
+          </span>
+      </button>   
+      
+    </section>
+
+    <!-- latest summer style -->
+    <section id="latest-summer-style" class="m-3  mt-5 flex gap-4 justify-between">
+      <div class="w-[1060px]  bg-white  ">
+        <div class="flex justify-between items-center mb-2 p-4 ">
+          <h1 class=" text-xl font-bold">Latest Summer Styles</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="latest-summer-style-container" class="px-4 justify-center  pb-4 flex gap-3 flex-wrap ">
+           <!-- {{}} -->
+        </div>
+      </div>
+      <div class="overflow-hidden cursor-pointer ">
+       <a href="#">
+        <img  class="w-full h-full object-cover cursor-pointer" src="./images/for-homepage/latest-summer-style/top-selling-phone.webp" alt="top-selling-phones">
+       </a>
+      </div>
+    </section>
+
+    <!-- festive specials / shop student essential / essentials for hobbies -->
+    <section  class="m-3  mt-5 flex gap-4 justify-between">
+      <div id="festive-specials" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center  p-4 ">
+          <h1 class=" text-xl font-bold">Festive Specials, Just For You!</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="festive-special-container" class="px-4  pb-4 flex gap-3 flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="student-essential" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center mb-2 p-3 ">
+          <h1 class=" text-xl font-bold">Shop Student Essentials</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="student-essential-container" class="px-4 gap-3 pb-4 flex flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="essential-for-hobby" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center  p-4 ">
+          <h1 class=" text-xl font-bold">Essentials for all Hobbies</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="essential-for-hobby-container" class="px-4  pb-4 flex gap-3 flex-wrap justify-center ">
+           <!-- {{}} -->
+
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- Home and kitchen essentials -->
+    <section style="padding-bottom: 10px;" id="home-kitchen-essential" class="m-3 mt-5 bg-white relative">
+     
+      <div class="flex justify-between items-center p-4">
+        <h1 class=" text-xl font-bold">Home & Kitchen Essentials</h1>
+        <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+          <i class="fa fa-angle-right text-lg"></i>
+        </button>
+      </div>
+      <div id="home-kitchen-essential-container" class="px-4 pb-4 flex gap-4  overflow-x-hidden scroll-smooth ">
+         <!-- {{}} -->
+      </div>
+      <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px"  type="button" class="top-[35%] transition ease-in-out  left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+        <span class="">
+          <i  class="fa fa-angle-left"></i>
+        </span>
+    </button>
+    <button id="next-btn"  style="border-radius: 5px 0px 0px 5px"  type="button" class="top-[35%] transition ease-in-out right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+        <span class="">
+          <i  class="fa fa-angle-right"></i>
+        </span>
+    </button>   
+    
+    </section>
+
+    <!-- Trending Gadgets & Appliances and Summer Essentials -->
+    <section  class="m-3  mt-5 flex gap-4 justify-between">
+      <div id="gadgets-and-appliances" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center  p-4 ">
+          <h1 class=" text-xl font-bold">Trending Gadgets & Appliances</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="gadgets-and-appliances-container" class="px-4  pb-4 flex gap-3 flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="summer-essential" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center mb-2  p-3 ">
+          <h1 class=" text-xl font-bold">Summer Essentials</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="summer-essential-container" class="px-4 gap-3 mb-2 pb-4 flex flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="shop-now-img" class="w-[1070px] h-[596px]  bg-white  ">
+        <a href="#">
+          <img class="w-full h-full object-cover" src="./images/for-homepage/summer-essentials/shopnow.webp" alt="shop-now">
+        </a>
+      </div>
+      
+    </section>
+
+    <!-- // For Summer Decor & Furnishing and Cricket Must-Haves -->
+    <section  class="m-3  mt-5 flex gap-4 justify-between">
+      <div id="summer-deco" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center  p-4 ">
+          <h1 class=" text-xl font-bold">Summer Decor & Furnishing</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="summer-deco-container" class="px-4  pb-4 flex gap-3 flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="cricket" class="w-[1070px]  bg-white  ">
+        <div class="flex justify-between items-center mb-2  p-3 ">
+          <h1 class=" text-xl font-bold">Cricket Must-Haves</h1>
+          <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+            <i class="fa fa-angle-right text-lg"></i>
+          </button>
+        </div>
+        <div id="cricket-container" class="px-4 gap-3 mb-2 pb-4 flex flex-wrap justify-center ">
+           <!-- {{}} -->
+        </div>
+      </div>
+
+      <div id="shop-now-img" class="w-[1070px] h-[596px]  bg-white  ">
+        <a href="#">
+          <img class="w-full h-full object-cover" src="./images/for-homepage/summer-essentials/finefurniture.webp" alt="shop-now">
+        </a>
+      </div>
+      
+    </section>
+
+    <!-- Grooming, Books, Auto & more -->
+    <section style="padding-bottom: 10px;" id="gromming-books-auto" class="m-3 mt-5 bg-white relative">
+     
+      <div class="flex justify-between items-center p-4">
+        <h1 class=" text-xl font-bold">Grooming, Books, Auto & more</h1>
+        <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+          <i class="fa fa-angle-right text-lg"></i>
+        </button>
+      </div>
+      <div id="gromming-books-auto-container" class="px-4 pb-4 flex gap-4  overflow-x-hidden scroll-smooth ">
+         <!-- {{}} -->
+      </div>
+      <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px"  type="button" class="top-[35%] transition ease-in-out  left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+        <span class="">
+          <i  class="fa fa-angle-left"></i>
+        </span>
+    </button>
+    <button id="next-btn"  style="border-radius: 5px 0px 0px 5px"  type="button" class="top-[35%] transition ease-in-out right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+        <span class="">
+          <i  class="fa fa-angle-right"></i>
+        </span>
+    </button>   
+    
+  </section>
+
+  <!-- Pick Your Styles -->
+  <section style="padding-bottom: 10px;" id="pick-your-styles" class="m-3 mt-5 bg-white relative">
+     
+    <div class="flex justify-between items-center p-4">
+      <h1 class=" text-xl font-bold">Pick Your Styles</h1>
+      <button class="w-[30px] h-[30px] flex justify-center items-center bg-blue-600 text-white  rounded-[50%]">
+        <i class="fa fa-angle-right text-lg"></i>
+      </button>
+    </div>
+    <div id="pick-your-styles-container" class="px-4 pb-4 flex gap-4  overflow-x-hidden scroll-smooth ">
+       <!-- {{}} -->
+    </div>
+    <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px"  type="button" class="top-[35%] transition ease-in-out  left-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30">
+      <span class="">
+        <i  class="fa fa-angle-left"></i>
+      </span>
+  </button>
+  <button id="next-btn"  style="border-radius: 5px 0px 0px 5px"  type="button" class="top-[35%] transition ease-in-out right-0 absolute w-[40px] bg-white h-[90px] shadow-lg text-[20px] font-bold text-gray-500 z-30" >
+      <span class="">
+        <i  class="fa fa-angle-right"></i>
+      </span>
+  </button>   
+</section>
+
+<!-- Top Stories -->
+<section class=" m-3 mt-[30px] p-4 bg-[#f5f5f5] ">
+  <!-- links -->
+  <h1 class="mt-9 mb-5 font-bold text-lg text-slate-600">Top Stories : Brand Directory</h1>
+  <div class="mb-2">
+    <span>Most searched for on Flipkart : </span>
+    <span class="links" id="most-search">
+      <!-- {{}} -->
+    <span>
+  
+  </div>
+  <div class="mb-2">
+    <span>MOBILES : </span>
+    <span class="links" id="mobiles">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>LAPTOPS : </span>
+    <span class="links" id="laptops">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>TVS : </span>
+    <span class="links" id="tvs">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>LARGE APPLIRANCES : </span>
+    <span class="links" id="large-appliances">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>CLOTHING : </span>
+    <span class="links" id="clothing">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>FOOTWEAR : </span>
+    <span class="links" id="footwear">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>GORCERIES : </span>
+    <span class="links" id="gorceries">
+      <!-- {{}}   -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>BEST SELLING ON FLIPKART : </span>
+    <span class="links" id="best-selling">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>FURNITURE : </span>
+    <span class="links" id="furniture">
+      <!-- {{}} -->
+    </span>
+  </div>
+  <div class="mb-2">
+    <span>BGMH : </span>
+    <span class="links" id="bgmh">
+      <!-- {{}} -->
+   </span>
+  </div>
+  <!-- about flipkart -->
+  <div  id = "aboutFlipkart" class=" mt-9">
+
+  </div>
+</section>
+
+<footer class=" bg-black text-white pt-8">
+  <div class="flex">
+    <div class="w-[60%] flex justify-center gap-7 ">
+      <div class=" text-xs">
+        <h2 class="text-[#878787] text-xs mb-3">ABOUT</h2>
+        <ul class="font-semibold flex-col gap-1 flex">
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Flipkart Stories</a></li>
+          <li><a href="#">Corporate Information</a></li>
+        </ul>
+      </div>
+      <div class=" text-xs">
+        <h2 class="text-[#878787] text-xs mb-3">GROUP COMPANIES</h2>
+        <ul class="font-semibold flex-col gap-1 flex">
+          <li><a href="#">Myntra</a></li>
+          <li><a href="#">Flipkart Wholesale</a></li>
+          <li><a href="#">Cleartrip</a></li>
+          <li><a href="#">Shopsy</a></li>
+        </ul>
+      </div>
+      <div class=" text-xs">
+        <h2 class="text-[#878787] text-xs mb-3">HELP</h2>
+        <ul class="font-semibold flex-col gap-1 flex">
+          <li><a href="#">Payments</a></li>
+          <li><a href="#">Flipkart Wholesale</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Cancellation & Returns</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Report Infringement</a></li>
+        </ul>
+      </div>
+      <div class=" text-xs">
+        <h2 class="text-[#878787] text-xs mb-3">CONSUMER POLICY</h2>
+        <ul class="font-semibold flex-col gap-1 flex">
+          <li><a href="#">Cancellation & Returns</a></li>
+          <li><a href="#">Terms Of Use</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Grievance Redressal</a></li>
+          <li><a href="#">EPR Compliance</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class=" flex gap-3 justify-center">
+      <div class="border-[#878787] border-l ps-8">
+        <h2 class="text-[#878787] text-xs mb-3">Mail Us:</h2>
+       <ul class="font-semibold flex-col gap-1 flex text-xs">
+          <li>Flipkart Internet Private Limited, </li>
+          <li> Buildings Alyssa, Begonia & </li>
+          <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+          <li> Bengaluru, 560103,</li>
+          <li> Karnataka, India</li>
+        </ul>
+        <h2 class="text-[#878787] text-xs my-3">Social:</h2>
+          <div>
+            <ul class="flex gap-3">
+              <li>
+                <a href="#">
+                  <img src="./images/for-homepage/side-images/fab.svg" alt="fab">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/for-homepage/side-images/xx.svg" alt="x">
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="./images/for-homepage/side-images/youtube.svg" alt="youtube">
+                </a>
+              </li>
+            </ul>
+          </div>
+      </div>
+      <div>
+        <h2 class="text-[#878787] text-xs mb-3">Registered Office Address:</h2>
+       <ul class="font-semibold flex-col gap-1 flex text-xs">
+          <li>Flipkart Internet Private Limited, </li>
+          <li> Buildings Alyssa, Begonia & </li>
+          <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+          <li> Bengaluru, 560103,</li>
+          <li> Karnataka, India</li>
+          <li> CIN : U51109KA2012PTC066107 </li>
+          <li> Telephone: <a class="text-blue-600" href="tel:044-45614700">044-45614700</a></li>
+        </ul>
+  
+      </div>
+    </div>
+  </div>
+  <div class="flex justify-around p-4 border-t border-[#878787] mt-10">
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <img src="./images/for-homepage/side-images/footer-shop.svg" alt="cart" />
+      <span class="tracking-wide text-xs">Become a Seller</span>
+    </div>
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <img src="./images/for-homepage/side-images/footer-advertise.svg" alt="advertise" />
+      <span class="tracking-wide text-xs">Advertise</span>
+    </div>
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <img src="./images/for-homepage/side-images/footer-gift.svg" alt="gift" />
+      <span class="tracking-wide text-xs">Gift Cards</span>
+    </div>
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <img src="./images/for-homepage/side-images/footerHelp.svg" alt="help" />
+      <span class="tracking-wide text-xs">Help Center</span>
+    </div>
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <span class="tracking-wide text-xs">© 2007-2024 Flipkart.com</span>
+    </div>
+    <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+      <img src="./images/for-homepage/side-images/footer-payment.svg" alt="payment" />
+    </div>
+  </div>
+</footer>
+  </body>
+  <script type="module" src="js/app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</html>

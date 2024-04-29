@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/productpage.css" />
+    <link rel="stylesheet" href="../css/fontawsome.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+  
+</head>
+<body class="h-[3000px]  text-gray-600 bg-gray-100 tracking-wide relative" >
+   <nav class="bg-[#2874f0] sticky top-0 z-[1000]   gap-[30px] items-center px-[120px] flex py-3">
+     <div class="flex flex-auto items-center gap-3">
+       <div>
+        <div>
+          <a href="../index.html">
+           <img width="75px" src="../images/for-productpage/nav-img/flipkart-plus_logo.png" alt="flipkart-plus_logo">
+         </a>
+        </div>
+        <a class="text-[11px] italic text-white flex items-center gap-[2px] hover:underlined pb-1" href="#">
+         Explore
+         <span class="text-[#ffe500]">Plus</span>
+         <img width="10" src="../images/for-productpage/nav-img/plus_aef861-logo.png" alt="plus_aef861-logo">
+        </a>
+       </div>
+       <div class="flex-auto ">
+        <form class="   bg-white relative" action="#">
+          <div>
+            <input class="w-full h-[37px] px-4" type="text" placeholder="Search for products, brands and more">
+          </div>
+          <button class="absolute right-5 top-[23%] ">
+            <i  class="fa-solid text-lg font-bold fa-magnifying-glass text-[#2874f0]"></i>
+          </button>          
+        </form>
+       </div>
+     </div>
+     <div>
+        <div class=" flex gap-[30px] items-center ">
+          <div id="login-btn" class=" tracking-wide bg-white w-[130px]  h-[30px] relative">
+            <button class="text-[#2874f0] w-full h-full">Login</button>
+            <div style="box-shadow:  0px 0px 10px 0px #8080804d;" class="absolute login-drop-down w-[250px]  left-[-60px] top-[44px] rounded-sm bg-white ">
+              <div
+                class=" flex justify-between px-3 py-5 text-sm "
+              >
+                <h1 class="text-gray-900 font-bold ">New customer?</h1>
+                <h1 class=" font-semibold text-[#2874f0]">
+                  <a href="#">Sign up</a>
+                </h1>
+              </div>
+              <ul class="text-sm text-gray-700 flex flex-col border-t">
+                <li class="hover:bg-gray-100 px-3 py-3">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px" src="../images/for-homepage/side-images/profile.svg" alt="profile" />
+                    My Profile
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/fkplus-img.svg"
+                      alt="fkplus-img"
+                    />
+                    Flipkart Plus Zone
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px" src="../images/for-homepage/side-images/orders.svg" alt="orders" />
+                    Orders
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px" src="../images/for-homepage/side-images/heart.svg" alt="whishlist" />
+                    Wishlist
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px" src="../images/for-homepage/side-images/rewards.svg" alt="rewards" />
+                    Rewards
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="pages/products.html" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/giftCard.svg"
+                      alt="giftCard"
+                    />
+                    Gift Cards
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div  style="width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid white" class=" login-drop-down top-[30px]  left-[44%] absolute"></div>
+            <div   class="  w-full p-3 bg-red-500 login-drop-down absolute bg-transparent "></div>
+          </div>
+          <div>
+            <a href="#">
+              <span class="text-[16px] font-bold tracking-wide text-white">Become a Seller</span>
+            </a>
+          </div>
+
+          <div id="more-btn" class=" relative">
+            <div class="text-white">
+              <span class="text-[16px] font-bold tracking-wide ">More</span>
+              <i id="more-btn-arrow" class="fa-solid fa-angle-down text-xs ms-1"></i>
+            </div>
+            <div style="box-shadow:  0px 0px 10px 0px #8080804d;" class="absolute more-btn-dropdown  w-[250px]  left-[-95px] top-[43px] rounded-sm bg-white ">
+              <ul class="text-sm flex flex-col border-t-2">
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/notificationPreferencesIcon.svg"
+                      alt="noti"
+                    />
+                    Notification Preferences
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/helpcenterIcon.svg"
+                      alt="fkplus-img"
+                    />
+                    24x7 Customer Care
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/advertiseIcon.svg"
+                      alt="orders"
+                    />
+                    Advertise
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img width="20px" height="20px"
+                      src="../images/for-homepage/side-images/downloadAppIcon.svg"
+                      alt="whishlist"
+                    />
+                    Download App
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div  style="width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 15px solid white" class=" more-btn-dropdown  top-[30px]  left-[24%] absolute"></div>
+            <div   class=" more-btn-dropdown  w-full p-3 bg-red-500  absolute bg-transparent "></div>
+          </div>
+
+          <div>
+            <div class="text-white text-[16px]">
+              <i class="fa-solid fa-cart-shopping me-1"></i>
+              <span class=" font-bold tracking-wide ">Cart</span>
+            </div>
+          </div>
+        </div>
+     </div>
+   </nav>
+
+   <!-- category bar -->
+   <section class="relative bg-white border-b bordrer-gray-300">
+    <div id="category-bar" class=" justify-center border-b flex text-sm">
+      <!-- {{}} -->
+    </div>
+   </section>
+
+   <!-- product Section -->
+   <section>
+     <div class="m-2 flex gap-2">
+        <aside class="   w-[270px] bg-gray-100">
+          <div id="advertisement" class=" bg-white">
+            <img class=" w-full " src="../images/for-productpage/products/advertisement2.webp" alt="advertise">
+            <div class="text-[15px]  font-bold text-[#212121] px-[16px] pt-[14px]">
+              Chic Women's Dresses!
+            </div>
+            <div class="text-[#212121] pb-[14px] text-[11px] px-[16px] mt-1" >
+              Min. 60% Off Elegant Fashion
+            </div>
+
+          </div >
+          <div id="filters" class=" mt-2 bg-white">
+            <h1 class="text-[18px] font-bold px-[16px] py-[8px]  text-[#212121] border-b border-gray-300">Filters</h1>
+            <div id="side-bar-category" class="pt-4 pb-6 border-b border-gray-300">
+              <span class=" text-[13px] inline-block px-[16px] py-[8px] ">CATEGORIES</span>
+              <div class="text-[13px] px-[16px] py-[5px]">
+                <span id="dropdown-btn-open" class="">
+                  <i  class="fa fa-angle-down "></i>
+                </span>
+                <span id="dropdown-btn-close" class="hidden">
+                  <i  class="fa fa-angle-left "></i>
+                </span>
+                <a class="text-[#212121] font-semibold" href="#">Clothing and Accessories</a>
+              </div>
+              <ul id="product-page-sidebar-category-lists" class=" ps-[40px] hidden  flex-col gap-4 mt-4 text-[#131313] select-none text-[13px]">
+                <li>
+                  <a href="#">Winter Wear</a>
+                </li>
+                <li>
+                  <a href="#">Topwear</a>
+                </li>
+                <li>
+                  <a href="#">Topwear</a>
+                </li>
+                <li>
+                  <a href="#">Bottomwear</a>
+                </li>
+                <li>
+                  <a href="#">Raincoats</a>
+                </li>
+                <li>
+                  <a href="#">Dresses and Gowns</a>
+                </li>
+                <li>
+                  <span class="text-[#2874f0] text-[13px]">Show 13 more</span>
+                </li>
+              </ul>
+              
+            </div>
+            <div id="gender" class="px-[16px] border-b border-gray-300 py-[14px] ">
+             <div class="flex justify-between text-[13px]">
+              <h1 class="text-[#212121] font-semibold ">Gender</h1>
+              <span id="dropdown-btn-open" class="">
+                <i  class="fa fa-angle-down "></i>
+              </span>
+              <span id="dropdown-btn-close" class="hidden">
+                <i  class="fa fa-angle-up "></i>
+              </span>
+             </div>
+             <ul id="gender-lists" class=" hidden text-[13px]  flex-col gap-2 my-2">
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Men
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Women
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Men & Women
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Boys
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Girls
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Boys & Girls
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Unisex
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Baby Boys & Baby Girls
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Baby Girls              
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Baby Boys
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Couple
+              </li>
+              <li class="flex items-center cursor-pointer">
+                <input type="checkbox" class="me-[11px]">
+                Baby Boys  Baby Girls
+              </li>
+             </ul>
+
+            </div>
+            <div id="assured" class="px-[16px] relative border-b border-gray-300 py-[14px] ">
+              <div class="flex justify-between text-[13px]">
+                <div class="flex items-center cursor-pointer">
+                  <input type="checkbox" class="me-[11px]">
+                  <img class="w-[77px]" src="../images/for-productpage/forsidebar/assuredImg.png" alt="assured">
+                </div>
+               <span id="dropdown-btn-open" class=" border cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center">
+                ?
+               </span>
+              
+              </div>
+              <div id="assured-details" style="box-shadow: 0 0 7px #b2aeae;" class="absolute hidden z-40 left-1 p-3  bg-white  text-[#212121]">
+                <div style="background: linear-gradient(90deg, #0c54b8 0, #2874f0 55%, #1ca7f1);" class="w-[264px] py-[32px] flex justify-center ">
+                <img class="w-[122px]" src="../images/for-productpage/forsidebar/assuredImg.png" alt="">
+                </div>
+                <h1 class=" text-center mt-[20px] mb-[10px] text-[18px]">Seal of Quality & Speed</h1>
+                <div>
+                  <div class=" flex gap-3 items-center">
+                    <div><img class="w-[48px] h-[48px]" src="../images/for-productpage/forsidebar/fa-callout-shield_afdfd9.png" alt="shield"></div>
+                    <div class="my-[14px]">
+                      <h1 class="text-[14px] text-[#212121] font-semibold">6 Quality Checks</h1>
+                      <p class=" text-[13px] ">You get exactly what you ordered</p>
+                    </div>
+                  </div>
+                  <div class=" flex gap-3 items-center">
+                    <div><img class="w-[48px] h-[48px]" src="../images/for-productpage/forsidebar/fa-callout-rocket_ecdb13.png" alt="rocket"></div>
+                    <div class="my-[14px]">
+                      <h1 class="text-[14px] text-[#212121] font-semibold ">Fast & Free Shipping</h1>
+                      <p class=" text-[13px] ">Delivery within 2-4 days <br> Get free shipping on select products.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Price -->
+            <div id="price-adjust" class="px-[16px] relative border-b border-gray-300 py-[14px] ">
+              <div class="flex justify-between text-[13px]">
+                <div class="flex items-center cursor-pointer">
+                  <input type="checkbox" class="me-[11px]">
+                  <img class="w-[77px]" src="../images/for-productpage/forsidebar/assuredImg.png" alt="assured">
+                </div>
+               <span id="dropdown-btn-open" class=" border cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center">
+                ?
+               </span>
+              
+              </div>
+              <div id="assured-details" style="box-shadow: 0 0 7px #b2aeae;" class="absolute hidden z-40 left-1 p-3  bg-white  text-[#212121]">
+                <div style="background: linear-gradient(90deg, #0c54b8 0, #2874f0 55%, #1ca7f1);" class="w-[264px] py-[32px] flex justify-center ">
+                <img class="w-[122px]" src="../images/for-productpage/forsidebar/assuredImg.png" alt="">
+                </div>
+                <h1 class=" text-center mt-[20px] mb-[10px] text-[18px]">Seal of Quality & Speed</h1>
+                <div>
+                  <div class=" flex gap-3 items-center">
+                    <div><img class="w-[48px] h-[48px]" src="../images/for-productpage/forsidebar/fa-callout-shield_afdfd9.png" alt="shield"></div>
+                    <div class="my-[14px]">
+                      <h1 class="text-[14px] text-[#212121] font-semibold">6 Quality Checks</h1>
+                      <p class=" text-[13px] ">You get exactly what you ordered</p>
+                    </div>
+                  </div>
+                  <div class=" flex gap-3 items-center">
+                    <div><img class="w-[48px] h-[48px]" src="../images/for-productpage/forsidebar/fa-callout-rocket_ecdb13.png" alt="rocket"></div>
+                    <div class="my-[14px]">
+                      <h1 class="text-[14px] text-[#212121] font-semibold ">Fast & Free Shipping</h1>
+                      <p class=" text-[13px] ">Delivery within 2-4 days <br> Get free shipping on select products.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </aside>
+        <div class="w-[984px]">
+           <div class=" bg-white">
+            <div class="p-3">
+              <div class="text-[12px] mb-4  text-[#878787] ">
+                <ul class="flex items-center gap-3">
+                  <li><a>Home</a> <i class="fa-solid fa-chevron-right text-2xs"></i></li> 
+    
+                  <li><a>Clothing and ...</a></li> 
+                </ul>
+              </div>
+              <p class=" text-[12px] leading-5 tracking-wider text-[#878787]">
+                Are you looking for stunning menswear options to add to your wardrobe collection? If yes, then you can have a look at the extensive selection of garments from JACK & JONES. With just a few simple clicks and swipes, you can explore numerous adequately crafted clothing and accessories that can become an important part of your wardrobe. The brand’s product range is wide, ranging from jackets, blazers, shorts, denim shirts, T-shirts, polo shirts, and sweaters to briefs, and more that cater to your diverse requirements. These clothes are designed to match the latest styles, whether you are opting for casual or formal wear. The brand offers a curated selection of fashion-forward apparel options. So, you can have a look at the contemporary and trendy designs that can enable you to make a mark when you are stepping out. These clothing options offered by the brand can help you create your own unique style. You can explore various clothing options provided by the brand in different colours, patterns, fabrics, and styles and stay true to your style and fashion sense. Moreover, you can get the options online at varied price ranges and select the ones that best suit your requirements. Shop online today for clothing options offered by JACK & JONES available at the tip of your finger. Thus, it’s important to wear complementing accessories when you dress up in your finest.
+              </p>
+              <div class=" mt-3">
+                <h1 class="font-semibold">Clothing and Accessories <span class="text-xs font-normal">(Showing 1 – 40 products of 52,117 products)</span></h1>
+              </div>
+              <ul class="mt-3 text-[14px] text-[#212121] flex gap-4">
+                <li class=" font-bold">Sort By</li>
+                <li class=" hover:border-b-2 border-blue-500 hover:text-blue-500 pb-2">
+                  <a href="#">Popularity</a>
+                </li>
+                <li class=" hover:border-b-2 border-blue-500 hover:text-blue-500 pb-2">
+                  <a href="#">Price - Low to High</a>
+                </li
+                >
+                <li class=" hover:border-b-2 border-blue-500 hover:text-blue-500 pb-2">
+                  <a href="#">Price - High to Low</a>
+                </li>
+                <li class=" hover:border-b-2 border-blue-500 hover:text-blue-500 pb-2">
+                  <a href="#">Newest First</a>
+                </li>
+              </ul>
+            </div>
+            <div class="product-cards-container border-b  border-gray-300 p-3 flex flex-wrap">
+              <!-- {{}} -->
+            </div>
+            <div class=" p-[10px]  text-[14px] flex items-center gap-[200px]">
+              <div>Page 1 of 563</div>
+              <ul class=" font-bold flex items-center gap-[18px]">
+                <li class="bg-[#2874f0] text-white w-[32px] h-[32px] rounded-[32px] flex items-center justify-center">1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="text-[#2874f0]">Next</li>
+              </ul>
+            </div>
+           </div>
+           <div class=" bg-white mt-4 p-[16px]">
+            <span class=" font-bold text-[15px] ">Did you find what you  were looking for?</span>
+            <button class=" px-[26px] text-black border border-gray-300 me-2 ms-5 py-[6px]">Yes</button>
+            <button class=" px-[26px] text-black border border-gray-300 py-[6px]">No</button>
+          </div>
+        </div>
+     </div>
+     
+   </section>
+
+
+
+  <script type="module" src="../js/productpage.js"></script>
+</body>
+</html>
