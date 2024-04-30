@@ -45,7 +45,8 @@
 }
 
 .product-cards:hover{
-    box-shadow: 0px 4px 14px #d8d6d6db;
+    box-shadow: 0px 4px 14px #c4c3c3db;
+    z-index: 100;
 }
 
 .product-cards:hover .info-container{

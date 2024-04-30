@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="../css/output.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/productpage.css" />
+    <link rel="stylesheet" href="../css/fontawsome.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/productDetails.css">
+  </head>
+  <body class=" text-gray-600 bg-gray-100 tracking-wide relative">
+    <nav
+      class="bg-[#2874f0] sticky top-0 z-[1000] gap-[30px] items-center px-[120px] flex py-3"
+    >
+      <div class="flex flex-auto items-center gap-3">
+        <div>
+          <div>
+            <a href="../index.html">
+              <img
+                width="75px"
+                src="../images/for-productpage/nav-img/flipkart-plus_logo.png"
+                alt="flipkart-plus_logo"
+              />
+            </a>
+          </div>
+          <a
+            class="text-[11px] italic text-white flex items-center gap-[2px] hover:underlined pb-1"
+            href="#"
+          >
+            Explore
+            <span class="text-[#ffe500]">Plus</span>
+            <img
+              width="10"
+              src="../images/for-productpage/nav-img/plus_aef861-logo.png"
+              alt="plus_aef861-logo"
+            />
+          </a>
+        </div>
+        <div class="flex-auto">
+          <form class="bg-white relative" action="#">
+            <div>
+              <input
+                class="w-full h-[37px] px-4"
+                type="text"
+                placeholder="Search for products, brands and more"
+              />
+            </div>
+            <button class="absolute right-5 top-[23%]">
+              <i
+                class="fa-solid text-lg font-bold fa-magnifying-glass text-[#2874f0]"
+              ></i>
+            </button>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="flex gap-[30px] items-center">
+          <div
+            id="login-btn"
+            class="tracking-wide bg-white w-[130px] h-[30px] relative"
+          >
+            <button class="text-[#2874f0] w-full h-full">Login</button>
+            <div
+              style="box-shadow: 0px 0px 10px 0px #8080804d"
+              class="absolute login-drop-down w-[250px] left-[-60px] top-[44px] rounded-sm bg-white"
+            >
+              <div class="flex justify-between px-3 py-5 text-sm">
+                <h1 class="text-gray-900 font-bold">New customer?</h1>
+                <h1 class="font-semibold text-[#2874f0]">
+                  <a href="#">Sign up</a>
+                </h1>
+              </div>
+              <ul class="text-sm text-gray-700 flex flex-col border-t">
+                <li class="hover:bg-gray-100 px-3 py-3">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/profile.svg"
+                      alt="profile"
+                    />
+                    My Profile
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/fkplus-img.svg"
+                      alt="fkplus-img"
+                    />
+                    Flipkart Plus Zone
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/orders.svg"
+                      alt="orders"
+                    />
+                    Orders
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/heart.svg"
+                      alt="whishlist"
+                    />
+                    Wishlist
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/rewards.svg"
+                      alt="rewards"
+                    />
+                    Rewards
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-3 border-t">
+                  <a href="pages/products.html" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/giftCard.svg"
+                      alt="giftCard"
+                    />
+                    Gift Cards
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 15px solid white;
+              "
+              class="login-drop-down top-[30px] left-[44%] absolute"
+            ></div>
+            <div
+              class="w-full p-3 bg-red-500 login-drop-down absolute bg-transparent"
+            ></div>
+          </div>
+          <div>
+            <a href="#">
+              <span class="text-[16px] font-bold tracking-wide text-white"
+                >Become a Seller</span
+              >
+            </a>
+          </div>
+
+          <div id="more-btn" class="relative">
+            <div class="text-white">
+              <span class="text-[16px] font-bold tracking-wide">More</span>
+              <i
+                id="more-btn-arrow"
+                class="fa-solid fa-angle-down text-xs ms-1"
+              ></i>
+            </div>
+            <div
+              style="box-shadow: 0px 0px 10px 0px #8080804d"
+              class="absolute more-btn-dropdown w-[250px] left-[-95px] top-[43px] rounded-sm bg-white"
+            >
+              <ul class="text-sm flex flex-col border-t-2">
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/notificationPreferencesIcon.svg"
+                      alt="noti"
+                    />
+                    Notification Preferences
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/helpcenterIcon.svg"
+                      alt="fkplus-img"
+                    />
+                    24x7 Customer Care
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/advertiseIcon.svg"
+                      alt="orders"
+                    />
+                    Advertise
+                  </a>
+                </li>
+                <li class="hover:bg-gray-100 px-3 py-2">
+                  <a href="#" class="flex items-center gap-3">
+                    <img
+                      width="20px"
+                      height="20px"
+                      src="../images/for-homepage/side-images/downloadAppIcon.svg"
+                      alt="whishlist"
+                    />
+                    Download App
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div
+              style="
+                width: 0;
+                height: 0;
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;
+                border-bottom: 15px solid white;
+              "
+              class="more-btn-dropdown top-[30px] left-[24%] absolute"
+            ></div>
+            <div
+              class="more-btn-dropdown w-full p-3 bg-red-500 absolute bg-transparent"
+            ></div>
+          </div>
+
+          <div>
+            <div class="text-white text-[16px]">
+              <i class="fa-solid fa-cart-shopping me-1"></i>
+              <span class="font-bold tracking-wide">Cart</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+      <!-- category bar -->
+      <section class="relative bg-white border-b bordrer-gray-300">
+        <div id="category-bar" class="justify-center border-b flex text-sm">
+          <!-- {{}} -->
+        </div>
+      </section>
+      <section id="product-detail" class="bg-white">
+        <div class=" flex justify-center gap-2 py-2">
+            <div >
+               <div class="w-[480px] flex gap-2">
+                <div id="left-img-container">
+                  <div class="w-[64px] active h-[58px] p-1 ">
+                      <img class="w-full h-full" src="../images/for-product-details-page/product/img1.webp" alt="img1" >
+                  </div>
+                  <div class="w-[64px] h-[58px]  p-1">
+                      <img class="w-full h-full" src="../images/for-product-details-page/product/img-2.webp" alt="img2" >
+                  </div>
+                  <div class="w-[64px] h-[58px]  p-1">
+                      <img  class="w-full h-full" src="../images/for-product-details-page/product/img3.webp" alt="img3" >
+                  </div>
+                  <div class="w-[64px] h-[58px]  p-1">
+                      <img class="w-full h-full" src="../images/for-product-details-page/product/img4.webp" alt="img4" >
+                  </div>
+                
+              </div>
+              <div class="w-[415px] h-[415px] ms-2 flex items-center relative">
+                  <img id="right-img" class="w-full" src="../images/for-product-details-page/product/img1.webp" alt="main-img">
+                  <div class="absolute left-[1px] top-[18px] text-[14px] rounded-[2px] font-bold px-[8px] text-[#fff]" style="background-color: rgb(0, 160, 152);">
+                    BESTSELLER
+                  </div>
+                  <div style="box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);" class="absolute flex justify-center items-center right-[1px] top-[18px] w-[48px] h-[48px] rounded-[48px]">
+                    <i class="fa-solid fa-heart opacity-[0.4] text-2xl"></i>
+                  </div>
+              </div>
+               </div>
+               <div id="buttons-container flex justify-between items-center gap-[1px] ">
+                <button style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);" class="w-[47%]  uppercase text-white py-[18px] bg-[#ff9f00]">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Add to cart
+                </button>
+                <button style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);" class="w-[47%]  uppercase text-white py-[18px] bg-[#fb641b]">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                  Buy Now
+                </button>
+              </div>
+            </div>
+            <div class="w-[769px] px-4 py-3">
+              <div class=" flex items-center justify-between">
+                <ul class="flex text-[12px] text-[#878787] gap-3">
+                  <li>Home <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Clothing and Accessories <i class="fa-solid fa-angle-right"></i></li>
+                  <li>Socks</li>
+                </ul>
+                <div>
+                  <i class="fa-solid fa-share text-gray-300"></i>
+                  <span class="text-[#212121] text-[14px]">Share</span>
+                </div>
+              </div>
+              <div>
+                <h2 class="mt-[12px] text-[#878787] text-[16px]">Swagr</h2>
+                <h2 class="text-[#212121] text-[16px]">Men Solid Ankle Length <span class=" ms-2">(Pack of 5)</span></h2>
+                <h4 class="font-bold text-[#388e3c] text-[14px] my-2">Special price</h4>
+                <div>
+                  <span class="text-[28px] text-[#212121] font-bold">₹179</span>
+                  <span class="text-[16px] ms-[10px] text-[#878787] line-through">₹1,200</span>
+                  <span class="text-[#26a541] text-[16px] font-bold ms-[10px]">85% off</span>
+                  <span class="inline-block w-[16px] h-[16px] text-center leading-[15px] rounded-[14px] border border-gray-400 text-[11px] shadow ms-[10px]">i</span>
+                </div>
+                <ul class=" flex items-center my-2 ">
+                  <li class="bg-[#26a541] py-[1px] px-[7px] rounded-[14px] text-white flex items-center font-bold text-[15px] ">
+                    3.9 
+                    <img class=" ms-1" src="../images/for-product-details-page/product/star.svg" alt="star">
+                  </li>
+                  <li class="text-[#878787] font-bold text-[14px] ms-[10px]">
+                    39,265 ratings and 3,154 reviews
+                  </li>
+                  <li>
+                    <img class=" w-[66px] ms-[10px]" src="../images/for-product-details-page/product/assured.png" alt="assued">
+                  </li>
+                </ul>
+                <div class=" my-10 ">
+                  <span class="text-[14px] text-[#878787] font-bold">Size</span>
+                  <span class="text-[#2874f0] border-2 border-[#2874f0] text-[18px] w-[48px] h-[40px] py-[10px] px-[6px] ms-10">Free</span>
+                </div>
+                <h2 class="text-[16px] text-[#212121] font-semibold mb-2">Available offers</h2>
+                <ul>
+                  <li>
+                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
+                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
+                    <span class="text-[#212121] text-[13px] tracking-normal">Get ₹25* instant discount for the 1st Flipkart Order using Flipkart UPI</span>
+                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
+                  </li>
+                  <li>
+                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
+                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
+                    <span class="text-[#212121] text-[13px] tracking-normal">5% Cashback on Flipkart Axis Bank Card</span>
+                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
+                  </li>
+                  <li>
+                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
+                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
+                    <span class="text-[#212121] text-[13px] tracking-normal">10% off on Citi-branded Credit Card Transactions, up to ₹1,750 on orders of ₹5,000 and above</span>
+                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
+                  </li>
+                  <li>
+                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
+                    <span class="text-[#212121] font-semibold text-[14px]">Special Price</span>
+                    <span class="text-[#212121] text-[13px]">Get extra 25% off (price inclusive of cashback/coupon)</span>
+                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
+                  </li>
+                  <li>
+                    <span class="text-[#2874f0] text-[14px] font-bold ms-8 mt-2">+19 more offers</span>
+                  </li>
+                </ul>
+                <div class=" mt-9 mb-7 flex justify-between items-center">
+                  <div class="text-[#878787] font-semibold text-[14px]">
+                    <img class="me-[8px] inline-block" src="../images//for-product-details-page/product/location.svg" alt="location">
+                    Deliver to
+                  </div>
+                  <div class="flex items-center gap-16">
+                    <h3 class="text-[#878787] font-semibold text-[14px]">Services</h3>
+                    <div class=" flex items-center gap-2">
+                      <span class="bg-[#2455f4] text-white text-[14px] inline-block w-[15px] h-[15px] text-center leading-4 rounded-[10px]">₹</span>
+                      <span class="text-[14px] text-[#212121]">Cash on Delivery available</span>
+                      <span
+                  id="dropdown-btn-open"
+                  class="border text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
+                >
+                  ?
+                </span>
+                    </div>
+                  </div>
+                </div>
+                <div class="relative w-[230px] mb-4" >
+                  <input maxlength="6" class="w-[230px]  pb-2 outline-none border-b-2 border-[#2874f0]" type="text" min="0" max="6" placeholder="Enter delivery pincode">
+                  <span class="absolute block text-[14px] top-[1.6px] text-gray-500 font-semibold right-2">Check</span>
+                </div>
+                <div>
+                  <div class="flex items-center gap-2">
+                    <div>
+                      <span class="text-[#212121] text-[14px] font-semibold">Delivery by 3 May, Friday</span>
+                      <span class="text-[#c2c2c2]">|</span>
+                      <span class="text-[#388e3c] text-[14px] font-semibold">Free</span>
+                      <span class="text-[#878787] line-through text-[14px]">₹40</span>
+                      </div>
+                      <div
+                      class="border  text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
+                    >
+                      ?
+                    </div>
+                  </div>
+                  <span class="text-[#212121] text-[12px]">if ordered before 2:59 PM</span>
+                </div>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+    <script type="module" src="../js/productDetail.js"></script>
+ 
+  </body>
+</html>

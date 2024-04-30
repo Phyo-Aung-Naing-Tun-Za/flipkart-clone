@@ -1,5 +1,5 @@
 import { productPageCategories } from "../Data/forproductpage/categories.js";
-import { links } from "../Data/forproductpage/paragraphs.js";
+import { clothingStores, latestWinterWear, links, popularSearches } from "../Data/forproductpage/paragraphs.js";
 import { products } from "../Data/forproductpage/products.js";
 import { selectAnElement, toggleDropdownUi } from "./reuseablefuns.js";
 
@@ -73,6 +73,8 @@ const productCardsContainer = selectAnElement(".product-cards-container");
 products.forEach((product) => generateProductCards(product));
 
 function generateProductCards(product) {
+
+
   let cards = document.createElement("div");
   cards.classList.add(
     "w-[25%]",
@@ -81,7 +83,7 @@ function generateProductCards(product) {
     "overflow-hidden",
     "relative"
   );
-
+  
   let heart = document.createElement("i");
   heart.style.opacity = 0.4;
   heart.classList.add(
@@ -205,6 +207,8 @@ function generateProductCards(product) {
   cards.appendChild(imgContainer);
   cards.appendChild(infoContainer);
   productCardsContainer.appendChild(cards);
+  cards.addEventListener('click', () => {window.location.href ='../pages/product-details.html'});
+
 }
 
 // for sidebar category lists
@@ -265,9 +269,29 @@ toggleDropdownUi(
 );
 
 //for paragraph section
-const linksContainer = selectAnElement('#paragraphs #links-container');
-links.fore
+ let linkContainer = selectAnElement("#links-container");
+ links.forEach(link => linkContainer.innerHTML += `<a class="text-[#2874f0]" href="#">${link}</a>,`);
+  
+ //for popular search
 
-function generateLinks(link){
-   linksContainer.innerHtml += `<a href='#'>${link}</a>`;
-}
+ let popularSearchContainer = selectAnElement('#popular-search');
+ popularSearches.forEach((search ,i) => createLinks(popularSearchContainer,popularSearches,search,i));
+
+ let winterWear = selectAnElement('#winter-wear');
+ latestWinterWear.forEach((result,i)=> createLinks(winterWear,latestWinterWear,result,i));
+
+ let clothingStoresContainer = selectAnElement('#clothig-store');
+ clothingStores.forEach((store,i)=>createLinks(clothingStoresContainer,clothingStores,store,i));
+
+ function createLinks(container,data,search,i){
+  let a = document.createElement('a');
+  a.setAttribute('href','#');
+  a.style.color = "#2874f0";
+  a.textContent = search;
+  a.classList.add('px-1','py-0')
+  if(i != data.length - 1){
+    a.classList.add('border-e', 'border-gray-400')
+  }
+  container.appendChild(a);
+ 
+ }

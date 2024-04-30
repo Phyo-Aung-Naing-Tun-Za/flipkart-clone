@@ -1,0 +1,7 @@
+.active{
+    border: 2px solid rgb(73, 92, 188);
+}
+::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+  }
