@@ -19,11 +19,11 @@ export const mainCategories = [
       {
         id: 1,
         name: "Men's Top Wear",
-        default:true,
+        default: true,
         subCategories: [
           "Men's  lorem hirts",
           "Men's Kurtas",
-          "Men's Ethets", 
+          "Men's Ethets",
           "Men's Blazers",
           "Men's Raincoat",
           "Men's Windcheaters",
@@ -78,9 +78,7 @@ export const mainCategories = [
       {
         id: 5,
         name: "Women Footwear",
-        subCategories: [
-          
-        ],
+        subCategories: [],
       },
       {
         id: 6,

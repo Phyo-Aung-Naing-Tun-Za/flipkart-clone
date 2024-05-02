@@ -1,10 +1,10 @@
-.active{
-    border: 2px solid rgb(73, 92, 188);
+.active {
+  border: 2px solid rgb(73, 92, 188);
 }
 ::placeholder {
-    font-size: 14px;
-    font-weight: 500;
-  }
-.similar-product-card:hover .title{
-    color: blue;
+  font-size: 14px;
+  font-weight: 500;
+}
+.similar-product-card:hover .title {
+  color: blue;
 }

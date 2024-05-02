@@ -106,5 +106,4 @@ export const similarProducts = [
     isSponser: false,
     img: "../../images/for-product-details-page/products/similar-product-5.webp",
   },
-
 ];

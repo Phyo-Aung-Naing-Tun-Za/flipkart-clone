@@ -1,5 +1,10 @@
 import { productPageCategories } from "../Data/forproductpage/categories.js";
-import { clothingStores, latestWinterWear, links, popularSearches } from "../Data/forproductpage/paragraphs.js";
+import {
+  clothingStores,
+  latestWinterWear,
+  links,
+  popularSearches,
+} from "../Data/forproductpage/paragraphs.js";
 import { products } from "../Data/forproductpage/products.js";
 import { selectAnElement, toggleDropdownUi } from "./reuseablefuns.js";
 
@@ -73,8 +78,6 @@ const productCardsContainer = selectAnElement(".product-cards-container");
 products.forEach((product) => generateProductCards(product));
 
 function generateProductCards(product) {
-
-
   let cards = document.createElement("div");
   cards.classList.add(
     "w-[25%]",
@@ -83,7 +86,7 @@ function generateProductCards(product) {
     "overflow-hidden",
     "relative"
   );
-  
+
   let heart = document.createElement("i");
   heart.style.opacity = 0.4;
   heart.classList.add(
@@ -207,13 +210,14 @@ function generateProductCards(product) {
   cards.appendChild(imgContainer);
   cards.appendChild(infoContainer);
   productCardsContainer.appendChild(cards);
-  cards.addEventListener('click', () => {window.location.href ='../pages/product-details.html'});
-
+  cards.addEventListener("click", () => {
+    window.location.href = "../pages/product-details.html";
+  });
 }
 
 // for sidebar category lists
 
-toggleDropdownUi( 
+toggleDropdownUi(
   selectAnElement("#side-bar-category #dropdown-btn-open"),
   selectAnElement("#side-bar-category #dropdown-btn-close"),
   selectAnElement("#product-page-sidebar-category-lists")
@@ -221,77 +225,85 @@ toggleDropdownUi(
 
 //for sidebar gender
 toggleDropdownUi(
-   selectAnElement('#gender #dropdown-btn-open'),
-   selectAnElement('#gender #dropdown-btn-close'),
-   selectAnElement('#gender #gender-lists'),
+  selectAnElement("#gender #dropdown-btn-open"),
+  selectAnElement("#gender #dropdown-btn-close"),
+  selectAnElement("#gender #gender-lists")
 );
 
 // for sidebar assured
-const assuredDetailsOpenBtn =  selectAnElement('#assured #dropdown-btn-open');
-const assuredDetailsContainer = selectAnElement('#assured-details');
-assuredDetailsOpenBtn.addEventListener('click',()=>{
-   assuredDetailsContainer.classList.toggle('hidden');
+const assuredDetailsOpenBtn = selectAnElement("#assured #dropdown-btn-open");
+const assuredDetailsContainer = selectAnElement("#assured-details");
+assuredDetailsOpenBtn.addEventListener("click", () => {
+  assuredDetailsContainer.classList.toggle("hidden");
 });
 
 //for brands
 toggleDropdownUi(
-   selectAnElement('#brand #dropdown-btn-open'),
-   selectAnElement('#brand #dropdown-btn-close'),
-   selectAnElement('#brand #brands-container'),
+  selectAnElement("#brand #dropdown-btn-open"),
+  selectAnElement("#brand #dropdown-btn-close"),
+  selectAnElement("#brand #brands-container")
 );
 
 // for discount
 toggleDropdownUi(
-   selectAnElement('#discount #dropdown-btn-open'),
-   selectAnElement('#discount #dropdown-btn-close'),
-   selectAnElement('#discount #discount-list'),
+  selectAnElement("#discount #dropdown-btn-open"),
+  selectAnElement("#discount #dropdown-btn-close"),
+  selectAnElement("#discount #discount-list")
 );
 
 // for customer rating
 toggleDropdownUi(
-   selectAnElement('#customer-rating #dropdown-btn-open'),
-   selectAnElement('#customer-rating #dropdown-btn-close'),
-   selectAnElement('#customer-rating #customer-rating-list'),
+  selectAnElement("#customer-rating #dropdown-btn-open"),
+  selectAnElement("#customer-rating #dropdown-btn-close"),
+  selectAnElement("#customer-rating #customer-rating-list")
 );
 
 // for offers
 toggleDropdownUi(
-   selectAnElement('#offers #dropdown-btn-open'),
-   selectAnElement('#offers #dropdown-btn-close'),
-   selectAnElement('#offers #offers-list'),
+  selectAnElement("#offers #dropdown-btn-open"),
+  selectAnElement("#offers #dropdown-btn-close"),
+  selectAnElement("#offers #offers-list")
 );
 
 // for Availability
 toggleDropdownUi(
-   selectAnElement('#availability #dropdown-btn-open'),
-   selectAnElement('#availability #dropdown-btn-close'),
-   selectAnElement('#availability #availability-list'),
+  selectAnElement("#availability #dropdown-btn-open"),
+  selectAnElement("#availability #dropdown-btn-close"),
+  selectAnElement("#availability #availability-list")
 );
 
 //for paragraph section
- let linkContainer = selectAnElement("#links-container");
- links.forEach(link => linkContainer.innerHTML += `<a class="text-[#2874f0]" href="#">${link}</a>,`);
-  
- //for popular search
+let linkContainer = selectAnElement("#links-container");
+links.forEach(
+  (link) =>
+    (linkContainer.innerHTML += `<a class="text-[#2874f0]" href="#">${link}</a>,`)
+);
 
- let popularSearchContainer = selectAnElement('#popular-search');
- popularSearches.forEach((search ,i) => createLinks(popularSearchContainer,popularSearches,search,i));
+//for popular search
 
- let winterWear = selectAnElement('#winter-wear');
- latestWinterWear.forEach((result,i)=> createLinks(winterWear,latestWinterWear,result,i));
+let popularSearchContainer = selectAnElement("#popular-search");
+popularSearches.forEach((search, i) =>
+  createLinks(popularSearchContainer, popularSearches, search, i)
+);
 
- let clothingStoresContainer = selectAnElement('#clothig-store');
- clothingStores.forEach((store,i)=>createLinks(clothingStoresContainer,clothingStores,store,i));
+let winterWear = selectAnElement("#winter-wear");
+latestWinterWear.forEach((result, i) =>
+  createLinks(winterWear, latestWinterWear, result, i)
+);
 
- function createLinks(container,data,search,i){
-  let a = document.createElement('a');
-  a.setAttribute('href','#');
+let clothingStoresContainer = selectAnElement("#clothig-store");
+clothingStores.forEach((store, i) =>
+  createLinks(clothingStoresContainer, clothingStores, store, i)
+);
+
+function createLinks(container, data, search, i) {
+  let a = document.createElement("a");
+  a.setAttribute("href", "#");
   a.style.color = "#2874f0";
   a.textContent = search;
-  a.classList.add('px-1','py-0')
-  if(i != data.length - 1){
-    a.classList.add('border-e', 'border-gray-400')
+  a.classList.add("px-1", "py-0");
+  if (i != data.length - 1) {
+    a.classList.add("border-e", "border-gray-400");
   }
   container.appendChild(a);
- 
- }
+}

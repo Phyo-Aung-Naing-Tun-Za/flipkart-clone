@@ -1,68 +1,78 @@
-
 /* for category section */
-.category-box:hover .main-cat-dropdown{
-    transition: ease-in-out 0.4s;
-    transform: rotate(180deg);
+.category-box:hover .main-cat-dropdown {
+  transition: ease-in-out 0.4s;
+  transform: rotate(180deg);
 }
 .category-box:hover .category-list {
-    display: block;
+  display: block;
 }
-.cover-div:hover + .category-list .first-dropdown-list:first-child li:first-child .right-category-list{
-    display: block;
+.cover-div:hover
+  + .category-list
+  .first-dropdown-list:first-child
+  li:first-child
+  .right-category-list {
+  display: block;
 }
-.cover-div:hover +  .category-list .first-dropdown-list:first-child .cate-lists:first-child{
-    background: #e2ecf3; 
-    font-weight: bold;
+.cover-div:hover
+  + .category-list
+  .first-dropdown-list:first-child
+  .cate-lists:first-child {
+  background: #e2ecf3;
+  font-weight: bold;
 }
-.cover-div:hover +  .category-list .first-dropdown-list:first-child .cate-lists:first-child i{
-    display: block;
-}
-
-.category-box:hover .category-list .first-dropdown-list:first-child .cate-lists:first-child{
-    border-radius: 8px 8px 0 0;
-
-}
-
-.category-list{
-    display: none;
-    z-index: 2000;
-    top: 100px;
-    right: 20px;
-    background-color: white;
-
+.cover-div:hover
+  + .category-list
+  .first-dropdown-list:first-child
+  .cate-lists:first-child
+  i {
+  display: block;
 }
 
-.cate-lists i{
-    display: none;
+.category-box:hover
+  .category-list
+  .first-dropdown-list:first-child
+  .cate-lists:first-child {
+  border-radius: 8px 8px 0 0;
 }
 
-.cate-lists:hover{
-    background: #e2ecf3; 
+.category-list {
+  display: none;
+  z-index: 2000;
+  top: 100px;
+  right: 20px;
+  background-color: white;
 }
 
-.cate-lists:hover i{
-    display: block;
+.cate-lists i {
+  display: none;
 }
 
-.right-category-list{
-    z-index: 2000;
-    top: 100px;
-    right: 20px;
-    background-color: white;
+.cate-lists:hover {
+  background: #e2ecf3;
 }
 
-.right-category-list{
-    display: none;
-    top: 0;
-    bottom: 0;
-    right: -230px;
-    box-shadow: -3px 1px 9px rgb(199, 198, 198);
-    z-index: 2000;
+.cate-lists:hover i {
+  display: block;
+}
 
+.right-category-list {
+  z-index: 2000;
+  top: 100px;
+  right: 20px;
+  background-color: white;
+}
+
+.right-category-list {
+  display: none;
+  top: 0;
+  bottom: 0;
+  right: -230px;
+  box-shadow: -3px 1px 9px rgb(199, 198, 198);
+  z-index: 2000;
 }
 .right-category-list ul li:hover {
-     font-weight: bold;
+  font-weight: bold;
 }
-.cate-lists:hover  .right-category-list{
-    display: block;
+.cate-lists:hover .right-category-list {
+  display: block;
 }

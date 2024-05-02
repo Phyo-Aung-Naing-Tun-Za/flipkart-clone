@@ -84,7 +84,6 @@ export const productDetailPageCategories = [
           "LG",
           "HTC",
           "Motorola",
-    
         ],
       },
       {
@@ -136,7 +135,6 @@ export const productDetailPageCategories = [
           "LG",
           "HTC",
           "Motorola",
-
         ],
       },
     ],
@@ -163,7 +161,6 @@ export const productDetailPageCategories = [
           "Honor",
           "Oppo",
           "Realme",
-
         ],
       },
       {
@@ -642,7 +639,6 @@ export const productDetailPageCategories = [
         id: 4,
         name: "Baby Cares",
         subCategories: [
-       
           "Xiaomi",
           "GooLorem ipgle",
           "Honor",
@@ -686,7 +682,6 @@ export const productDetailPageCategories = [
           "LG",
           "H Lorem ipTC",
           "Motorola",
-
         ],
       },
     ],
@@ -717,7 +712,6 @@ export const productDetailPageCategories = [
           "LG",
           "HTC",
           "Motorola",
-       
         ],
       },
       {
@@ -767,7 +761,6 @@ export const productDetailPageCategories = [
           "Motorola",
           "Lenovo",
           "Xiaomi",
-         
         ],
       },
       {
@@ -887,7 +880,6 @@ export const productDetailPageCategories = [
           "Sony",
           "LG",
           "HTC",
-
         ],
       },
       {
