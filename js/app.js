@@ -15,6 +15,7 @@ import {
   trandingGadgesAndAppli,
 } from "../Data/forhomepage/product-data.js";
 import { aboutFlipKart, topStories } from "../Data/forhomepage/sideData.js";
+import { products } from "../Data/forproductpage/products.js";
 import {
   creatProductCart,
   creatProductCartTwo,
@@ -308,3 +309,40 @@ idLists.forEach((id) =>
 
 // for about filpkart
 generateUi(aboutFlipKart, createParagraph, selectAnElement("#aboutFlipkart"));
+
+// for search box
+
+let searchForm = selectAnElement("#search-form");
+
+searchForm.addEventListener('submit',(e)=>{
+  e.perventDefault();
+})
+let searchInput = selectAnElement("#search-form #search-input");
+let searchResultContainer = selectAnElement("#search-results-container")
+searchInput.addEventListener('keyup',(e)=>{
+  searchResultContainer.innerHTML = '';
+  document.querySelector('#search-results').classList.remove('hidden');
+ let result = products.filter(product =>  product.name.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase()));
+  if(result){
+    result.forEach(data => {
+      searchResultContainer.innerHTML += `<li class="py-2 cursor-pointer hover:text-blue-500">
+      <a href="../pages/products.html" class='flex gap-2  items-center'>
+      <img class="w-[30px] " src="${data.img}" alt="">
+      <h1 class="text-black text-sm">${data.name}</h1>
+      </a>
+    </li>`;
+    })
+  }else{
+    document.querySelector('#search-results').classList.add('hidden');
+  };
+ 
+});
+
+searchResultContainer.addEventListener('click',(e)=>{
+  document.querySelector('#search-results').classList.add('hidden');
+})
+
+document.body.addEventListener('click',(e)=>{
+  document.querySelector('#search-results').classList.add('hidden');
+  searchInput.value = "";
+})

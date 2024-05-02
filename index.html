@@ -40,14 +40,20 @@
           </div>
           <!-- search box  -->
 
-          <form class="relative nav-search-box-lg ms-7 w-[480px]" action="#">
+          <form id="search-form" class="relative nav-search-box-lg ms-7 w-[480px]" action="#">
+            <div id="search-results" class=" hidden absolute top-10 p-3 bg-white w-[480px] rounded-md shadow-2xl">
+              <ul id="search-results-container">
+                <!-- {{}} -->
+              </ul>
+            </div>
             <i
               class="fa-solid fa-magnifying-glass absolute text-lg text-gray-500 left-3 top-[17%]"
             ></i>
             <div>
-              <input
-                class="bg-blue-100 w-full h-[40px] border border-gray-200 rounded-md ps-10 p-2 "
+              <input id="search-input"
+                class="bg-blue-100 w-full outline-none  h-[40px] border border-gray-200 rounded-md ps-10 p-2 "
                 type="text"
+                name="search"
                 placeholder="Search for Products, Brands and More"
               />
             </div>
@@ -191,21 +197,7 @@
           </div>
         </div>
       </div>
-      <!-- search box for md-screen -->
-      <div>
-        <form class="relative hidden nav-search-box-md mt-3" action="#">
-          <i
-            class="fa-solid fa-magnifying-glass absolute text-lg text-gray-500 top-[30%] left-3"
-          ></i>
-          <div>
-            <input
-              class="bg-blue-100 w-full h-[40px] rounded-md ps-10 p-2 border"
-              type="text"
-              placeholder="Search for Products, Brands and More"
-            />
-          </div>
-        </form>
-      </div>
+      
     </nav>
     <!-- side-bar -->
     <aside

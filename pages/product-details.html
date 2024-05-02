@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../css/productpage.css" />
     <link rel="stylesheet" href="../css/fontawsome.css" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/productDetails.css">
+    <link rel="stylesheet" href="../css/productDetails.css" />
   </head>
-  <body class=" text-gray-600 bg-gray-100 tracking-wide relative">
+  <body class="text-gray-600 bg-gray-200 tracking-wide relative">
     <nav
       class="bg-[#2874f0] sticky top-0 z-[1000] gap-[30px] items-center px-[120px] flex py-3"
     >
@@ -247,166 +247,1041 @@
         </div>
       </div>
     </nav>
-      <!-- category bar -->
-      <section class="relative bg-white border-b bordrer-gray-300">
-        <div id="category-bar" class="justify-center border-b flex text-sm">
-          <!-- {{}} -->
-        </div>
-      </section>
-      <section id="product-detail" class="bg-white">
-        <div class=" flex justify-center gap-2 py-2">
-            <div >
-               <div class="w-[480px] flex gap-2">
-                <div id="left-img-container">
-                  <div class="w-[64px] active h-[58px] p-1 ">
-                      <img class="w-full h-full" src="../images/for-product-details-page/product/img1.webp" alt="img1" >
-                  </div>
-                  <div class="w-[64px] h-[58px]  p-1">
-                      <img class="w-full h-full" src="../images/for-product-details-page/product/img-2.webp" alt="img2" >
-                  </div>
-                  <div class="w-[64px] h-[58px]  p-1">
-                      <img  class="w-full h-full" src="../images/for-product-details-page/product/img3.webp" alt="img3" >
-                  </div>
-                  <div class="w-[64px] h-[58px]  p-1">
-                      <img class="w-full h-full" src="../images/for-product-details-page/product/img4.webp" alt="img4" >
-                  </div>
-                
+    <!-- category bar -->
+    <section class="relative bg-white border-b bordrer-gray-300">
+      <div id="category-bar" class="justify-center border-b flex text-sm">
+        <!-- {{}} -->
+      </div>
+    </section>
+    <section id="product-detail" class="bg-white">
+      <div class="flex justify-center gap-2 py-2">
+        <div>
+          <div class=" sticky top-[78px]">
+            <div class="w-[480px] flex gap-2 ">
+              <div id="left-img-container">
+                <div class="w-[64px] active h-[58px] p-1">
+                  <img
+                    class="w-full h-full"
+                    src="../images/for-product-details-page/product/img1.webp"
+                    alt="img1"
+                  />
+                </div>
+                <div class="w-[64px] h-[58px] p-1">
+                  <img
+                    class="w-full h-full"
+                    src="../images/for-product-details-page/product/img-2.webp"
+                    alt="img2"
+                  />
+                </div>
+                <div class="w-[64px] h-[58px] p-1">
+                  <img
+                    class="w-full h-full"
+                    src="../images/for-product-details-page/product/img3.webp"
+                    alt="img3"
+                  />
+                </div>
+                <div class="w-[64px] h-[58px] p-1">
+                  <img
+                    class="w-full h-full"
+                    src="../images/for-product-details-page/product/img4.webp"
+                    alt="img4"
+                  />
+                </div>
               </div>
               <div class="w-[415px] h-[415px] ms-2 flex items-center relative">
-                  <img id="right-img" class="w-full" src="../images/for-product-details-page/product/img1.webp" alt="main-img">
-                  <div class="absolute left-[1px] top-[18px] text-[14px] rounded-[2px] font-bold px-[8px] text-[#fff]" style="background-color: rgb(0, 160, 152);">
-                    BESTSELLER
-                  </div>
-                  <div style="box-shadow: 0 1px 4px 0 rgba(0,0,0,.1);" class="absolute flex justify-center items-center right-[1px] top-[18px] w-[48px] h-[48px] rounded-[48px]">
-                    <i class="fa-solid fa-heart opacity-[0.4] text-2xl"></i>
-                  </div>
-              </div>
-               </div>
-               <div id="buttons-container flex justify-between items-center gap-[1px] ">
-                <button style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);" class="w-[47%]  uppercase text-white py-[18px] bg-[#ff9f00]">
-                  <i class="fa-solid fa-cart-shopping"></i>
-                  Add to cart
-                </button>
-                <button style="box-shadow: 0 1px 2px 0 rgba(0,0,0,.2);" class="w-[47%]  uppercase text-white py-[18px] bg-[#fb641b]">
-                  <i class="fa-solid fa-bolt-lightning"></i>
-                  Buy Now
-                </button>
+                <img
+                  id="right-img"
+                  class="w-full"
+                  src="../images/for-product-details-page/product/img1.webp"
+                  alt="main-img"
+                />
+                <div
+                  class="absolute left-[1px] top-[18px] text-[14px] rounded-[2px] font-bold px-[8px] text-[#fff]"
+                  style="background-color: rgb(0, 160, 152)"
+                >
+                  BESTSELLER
+                </div>
+                <div
+                  style="box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1)"
+                  class="absolute flex justify-center items-center right-[1px] top-[18px] w-[48px] h-[48px] rounded-[48px]"
+                >
+                  <i class="fa-solid fa-heart opacity-[0.4] text-2xl"></i>
+                </div>
               </div>
             </div>
-            <div class="w-[769px] px-4 py-3">
-              <div class=" flex items-center justify-between">
-                <ul class="flex text-[12px] text-[#878787] gap-3">
-                  <li>Home <i class="fa-solid fa-angle-right"></i></li>
-                  <li>Clothing and Accessories <i class="fa-solid fa-angle-right"></i></li>
-                  <li>Socks</li>
-                </ul>
-                <div>
-                  <i class="fa-solid fa-share text-gray-300"></i>
-                  <span class="text-[#212121] text-[14px]">Share</span>
+            <div
+              id="buttons-container flex justify-between items-center gap-[1px] "
+            >
+              <button
+                style="box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)"
+                class="w-[47%] uppercase text-white py-[18px] bg-[#ff9f00]"
+              >
+                <i class="fa-solid fa-cart-shopping"></i>
+                Add to cart
+              </button>
+              <button
+                style="box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2)"
+                class="w-[47%] uppercase text-white py-[18px] bg-[#fb641b]"
+              >
+                <i class="fa-solid fa-bolt-lightning"></i>
+                Buy Now
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-[769px] px-4 py-3">
+          <div class="flex items-center justify-between">
+            <ul class="flex text-[12px] text-[#878787] gap-3">
+              <li>Home <i class="fa-solid fa-angle-right"></i></li>
+              <li>
+                Clothing and Accessories <i class="fa-solid fa-angle-right"></i>
+              </li>
+              <li>Socks</li>
+            </ul>
+            <div>
+              <i class="fa-solid fa-share text-gray-300"></i>
+              <span class="text-[#212121] text-[14px]">Share</span>
+            </div>
+          </div>
+          <div>
+            <h2 class="mt-[12px] text-[#878787] text-[16px]">Swagr</h2>
+            <h2 class="text-[#212121] text-[16px]">
+              Men Solid Ankle Length <span class="ms-2">(Pack of 5)</span>
+            </h2>
+            <h4 class="font-bold text-[#388e3c] text-[14px] my-2">
+              Special price
+            </h4>
+            <div>
+              <span class="text-[28px] text-[#212121] font-bold">₹179</span>
+              <span class="text-[16px] ms-[10px] text-[#878787] line-through"
+                >₹1,200</span
+              >
+              <span class="text-[#26a541] text-[16px] font-bold ms-[10px]"
+                >85% off</span
+              >
+              <span
+                class="inline-block w-[16px] h-[16px] text-center leading-[15px] rounded-[14px] border border-gray-400 text-[11px] shadow ms-[10px]"
+                >i</span
+              >
+            </div>
+            <ul class="flex items-center my-2">
+              <li
+                class="bg-[#26a541] py-[1px] px-[7px] rounded-[14px] text-white flex items-center font-bold text-[15px]"
+              >
+                3.9
+                <img
+                  class="ms-1"
+                  src="../images/for-product-details-page/product/star.svg"
+                  alt="star"
+                />
+              </li>
+              <li class="text-[#878787] font-bold text-[14px] ms-[10px]">
+                39,265 ratings and 3,154 reviews
+              </li>
+              <li>
+                <img
+                  class="w-[66px] ms-[10px]"
+                  src="../images/for-product-details-page/product/assured.png"
+                  alt="assued"
+                />
+              </li>
+            </ul>
+            <div class="my-10">
+              <span class="text-[14px] text-[#878787] font-bold">Size</span>
+              <span
+                class="text-[#2874f0] border-2 border-[#2874f0] text-[18px] w-[48px] h-[40px] py-[10px] px-[6px] ms-10"
+                >Free</span
+              >
+            </div>
+            <h2 class="text-[16px] text-[#212121] font-semibold mb-2">
+              Available offers
+            </h2>
+            <ul>
+              <li>
+                <img
+                  class="inline-block w-[18px] h-[18px] me-2"
+                  src="../images/for-product-details-page/product/radio.webp"
+                  alt="radio"
+                />
+                <span class="text-[#212121] font-semibold text-[14px]"
+                  >Bank Offer</span
+                >
+                <span class="text-[#212121] text-[13px] tracking-normal"
+                  >Get ₹25* instant discount for the 1st Flipkart Order using
+                  Flipkart UPI</span
+                >
+                <span class="text-[#2874f0] font-semibold text-[14px]"
+                  >T&C</span
+                >
+              </li>
+              <li>
+                <img
+                  class="inline-block w-[18px] h-[18px] me-2"
+                  src="../images/for-product-details-page/product/radio.webp"
+                  alt="radio"
+                />
+                <span class="text-[#212121] font-semibold text-[14px]"
+                  >Bank Offer</span
+                >
+                <span class="text-[#212121] text-[13px] tracking-normal"
+                  >5% Cashback on Flipkart Axis Bank Card</span
+                >
+                <span class="text-[#2874f0] font-semibold text-[14px]"
+                  >T&C</span
+                >
+              </li>
+              <li>
+                <img
+                  class="inline-block w-[18px] h-[18px] me-2"
+                  src="../images/for-product-details-page/product/radio.webp"
+                  alt="radio"
+                />
+                <span class="text-[#212121] font-semibold text-[14px]"
+                  >Bank Offer</span
+                >
+                <span class="text-[#212121] text-[13px] tracking-normal"
+                  >10% off on Citi-branded Credit Card Transactions, up to
+                  ₹1,750 on orders of ₹5,000 and above</span
+                >
+                <span class="text-[#2874f0] font-semibold text-[14px]"
+                  >T&C</span
+                >
+              </li>
+              <li>
+                <img
+                  class="inline-block w-[18px] h-[18px] me-2"
+                  src="../images/for-product-details-page/product/radio.webp"
+                  alt="radio"
+                />
+                <span class="text-[#212121] font-semibold text-[14px]"
+                  >Special Price</span
+                >
+                <span class="text-[#212121] text-[13px]"
+                  >Get extra 25% off (price inclusive of cashback/coupon)</span
+                >
+                <span class="text-[#2874f0] font-semibold text-[14px]"
+                  >T&C</span
+                >
+              </li>
+              <li>
+                <span class="text-[#2874f0] text-[14px] font-bold ms-8 mt-2"
+                  >+19 more offers</span
+                >
+              </li>
+            </ul>
+            <div class="mt-9 mb-7 flex justify-between items-center">
+              <div class="text-[#878787] font-semibold text-[14px]">
+                <img
+                  class="me-[8px] inline-block"
+                  src="../images//for-product-details-page/product/location.svg"
+                  alt="location"
+                />
+                Deliver to
+              </div>
+              <div class="flex items-center gap-16">
+                <h3 class="text-[#878787] font-semibold text-[14px]">
+                  Services
+                </h3>
+                <div class="flex items-center gap-2">
+                  <span
+                    class="bg-[#2455f4] text-white text-[14px] inline-block w-[15px] h-[15px] text-center leading-4 rounded-[10px]"
+                    >₹</span
+                  >
+                  <span class="text-[14px] text-[#212121]"
+                    >Cash on Delivery available</span
+                  >
+                  <span
+                    id="dropdown-btn-open"
+                    class="border text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
+                  >
+                    ?
+                  </span>
                 </div>
               </div>
-              <div>
-                <h2 class="mt-[12px] text-[#878787] text-[16px]">Swagr</h2>
-                <h2 class="text-[#212121] text-[16px]">Men Solid Ankle Length <span class=" ms-2">(Pack of 5)</span></h2>
-                <h4 class="font-bold text-[#388e3c] text-[14px] my-2">Special price</h4>
+            </div>
+            <div class="relative w-[230px] mb-4">
+              <input
+                maxlength="6"
+                class="w-[230px] pb-2 outline-none border-b-2 border-[#2874f0]"
+                type="text"
+                min="0"
+                max="6"
+                placeholder="Enter delivery pincode"
+              />
+              <span
+                class="absolute block text-[14px] top-[1.6px] text-gray-500 font-semibold right-2"
+                >Check</span
+              >
+            </div>
+            <div>
+              <div class="flex items-center gap-2">
                 <div>
-                  <span class="text-[28px] text-[#212121] font-bold">₹179</span>
-                  <span class="text-[16px] ms-[10px] text-[#878787] line-through">₹1,200</span>
-                  <span class="text-[#26a541] text-[16px] font-bold ms-[10px]">85% off</span>
-                  <span class="inline-block w-[16px] h-[16px] text-center leading-[15px] rounded-[14px] border border-gray-400 text-[11px] shadow ms-[10px]">i</span>
+                  <span class="text-[#212121] text-[14px] font-semibold"
+                    >Delivery by 3 May, Friday</span
+                  >
+                  <span class="text-[#c2c2c2]">|</span>
+                  <span class="text-[#388e3c] text-[14px] font-semibold"
+                    >Free</span
+                  >
+                  <span class="text-[#878787] line-through text-[14px]"
+                    >₹40</span
+                  >
                 </div>
-                <ul class=" flex items-center my-2 ">
-                  <li class="bg-[#26a541] py-[1px] px-[7px] rounded-[14px] text-white flex items-center font-bold text-[15px] ">
-                    3.9 
-                    <img class=" ms-1" src="../images/for-product-details-page/product/star.svg" alt="star">
-                  </li>
-                  <li class="text-[#878787] font-bold text-[14px] ms-[10px]">
-                    39,265 ratings and 3,154 reviews
-                  </li>
-                  <li>
-                    <img class=" w-[66px] ms-[10px]" src="../images/for-product-details-page/product/assured.png" alt="assued">
-                  </li>
-                </ul>
-                <div class=" my-10 ">
-                  <span class="text-[14px] text-[#878787] font-bold">Size</span>
-                  <span class="text-[#2874f0] border-2 border-[#2874f0] text-[18px] w-[48px] h-[40px] py-[10px] px-[6px] ms-10">Free</span>
-                </div>
-                <h2 class="text-[16px] text-[#212121] font-semibold mb-2">Available offers</h2>
-                <ul>
-                  <li>
-                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
-                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
-                    <span class="text-[#212121] text-[13px] tracking-normal">Get ₹25* instant discount for the 1st Flipkart Order using Flipkart UPI</span>
-                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
-                  </li>
-                  <li>
-                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
-                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
-                    <span class="text-[#212121] text-[13px] tracking-normal">5% Cashback on Flipkart Axis Bank Card</span>
-                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
-                  </li>
-                  <li>
-                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
-                    <span class="text-[#212121] font-semibold text-[14px]">Bank Offer</span>
-                    <span class="text-[#212121] text-[13px] tracking-normal">10% off on Citi-branded Credit Card Transactions, up to ₹1,750 on orders of ₹5,000 and above</span>
-                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
-                  </li>
-                  <li>
-                    <img class="inline-block w-[18px] h-[18px] me-2" src="../images/for-product-details-page/product/radio.webp" alt="radio">
-                    <span class="text-[#212121] font-semibold text-[14px]">Special Price</span>
-                    <span class="text-[#212121] text-[13px]">Get extra 25% off (price inclusive of cashback/coupon)</span>
-                    <span class=" text-[#2874f0] font-semibold text-[14px]">T&C</span>
-                  </li>
-                  <li>
-                    <span class="text-[#2874f0] text-[14px] font-bold ms-8 mt-2">+19 more offers</span>
-                  </li>
-                </ul>
-                <div class=" mt-9 mb-7 flex justify-between items-center">
-                  <div class="text-[#878787] font-semibold text-[14px]">
-                    <img class="me-[8px] inline-block" src="../images//for-product-details-page/product/location.svg" alt="location">
-                    Deliver to
-                  </div>
-                  <div class="flex items-center gap-16">
-                    <h3 class="text-[#878787] font-semibold text-[14px]">Services</h3>
-                    <div class=" flex items-center gap-2">
-                      <span class="bg-[#2455f4] text-white text-[14px] inline-block w-[15px] h-[15px] text-center leading-4 rounded-[10px]">₹</span>
-                      <span class="text-[14px] text-[#212121]">Cash on Delivery available</span>
-                      <span
-                  id="dropdown-btn-open"
+                <div
                   class="border text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
                 >
                   ?
-                </span>
-                    </div>
+                </div>
+              </div>
+              <span class="text-[#212121] text-[12px]"
+                >if ordered before 2:59 PM</span
+              ><br />
+              <span class="text-[#2874f0] font-bold text-[14px]"
+                >View Details</span
+              >
+            </div>
+            <div class="flex gap-20 my-8">
+              <div>
+                <span class="text-[14px] text-[#878787] font-bold">Seller</span>
+              </div>
+              <div>
+                <div class="flex items-center gap-2">
+                  <h3 class="text-[#2874f0] text-[14px] font-bold">
+                    RAVR India
+                  </h3>
+                  <div
+                    class="bg-[#2874f0] py-[2px] ps-[6px] pe-[4px] rounded-[10px] text-white flex items-center font-bold text-[11px]"
+                  >
+                    3.5
+                    <img
+                      width="12px"
+                      height="12px"
+                      class="ms-1"
+                      src="../images/for-product-details-page/product/star.svg"
+                      alt="star"
+                    />
                   </div>
                 </div>
-                <div class="relative w-[230px] mb-4" >
-                  <input maxlength="6" class="w-[230px]  pb-2 outline-none border-b-2 border-[#2874f0]" type="text" min="0" max="6" placeholder="Enter delivery pincode">
-                  <span class="absolute block text-[14px] top-[1.6px] text-gray-500 font-semibold right-2">Check</span>
-                </div>
-                <div>
-                  <div class="flex items-center gap-2">
-                    <div>
-                      <span class="text-[#212121] text-[14px] font-semibold">Delivery by 3 May, Friday</span>
-                      <span class="text-[#c2c2c2]">|</span>
-                      <span class="text-[#388e3c] text-[14px] font-semibold">Free</span>
-                      <span class="text-[#878787] line-through text-[14px]">₹40</span>
-                      </div>
-                      <div
-                      class="border  text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
+                <ul class="flex items-center gap-3">
+                  <li class="w-[6px] h-[6px] rounded-[6px] bg-gray-400"></li>
+                  <li class="text-[#212128] text-[14px]">
+                    No Returns Applicable
+                  </li>
+                  <li>
+                    <span
+                      id="dropdown-btn-open"
+                      class="border text-[13px] cursor-pointer border-gray-200 clear-start w-[20px] h-[20px] rounded-[20px] flex justify-center items-center"
                     >
                       ?
-                    </div>
-                  </div>
-                  <span class="text-[#212121] text-[12px]">if ordered before 2:59 PM</span>
+                    </span>
+                  </li>
+                </ul>
+                <div
+                  class="text-[#2874f0] cursor-pointer font-bold text-[14px] my-2"
+                >
+                  See other sellers
                 </div>
               </div>
             </div>
+            <div class="mb-8">
+              <div>
+                <img
+                  src="../images/for-product-details-page/product/supercoin.webp"
+                  alt="supercoin"
+                />
+              </div>
+            </div>
+            <!-- Product Details -->
+            <div class="border-y-2 py-8 border-gray-300">
+              <div
+                id="prduct-details-toggler"
+                class="flex justify-between items-center"
+              >
+                <h1 class="select-none text-[24px] font-bold text-[#212121]">
+                  Product Details
+                </h1>
+                <div>
+                  <div id="plus-btn" class="transition-all ease-in-out">
+                    <i class="fa fa-plus text-lg"></i>
+                  </div>
+                  <div id="minus-btn" class="hidden transition-all ease-in-out">
+                    <i class="fa fa-minus text-lg"></i>
+                  </div>
+                </div>
+              </div>
+              <table id="productDetailsTable" class="mt-8 hidden">
+                <tbody class="">
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Color
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Multicolor
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Pattern
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Solid
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Ideal For
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Men
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Net Quantity
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      5
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Fabric
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Cotton Elastane
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Type
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Ankle Length Socks
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] pb-[24px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Number of Contents in Sales Package
+                    </td>
+                    <td
+                      class="pb-[24px] text-[#212121] text-[14px] cursor-pointer"
+                    >
+                      Pack of 5
+                    </td>
+                  </tr>
+                  <tr>
+                    <td
+                      class="w-[200px] text-[#878787] text-[14px] font-semibold"
+                    >
+                      Style Code
+                    </td>
+                    <td class="text-[#212121] text-[14px] cursor-pointer">
+                      SWG22-5PK
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="w-[200px] text-[#2874f0] text-[14px] font-bold">
+                      Read More
+                    </td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+              <!-- Reviews -->
+            <div class="mt-8">
+              <div class="flex justify-between items-center">
+                <div class="text-[24px] font-bold text-[#212121]">
+                  Ratings & Reviews
+                </div>
+                <div class="flex gap-3 items-center">
+                  <span
+                    class="bg-[#26a541] py-[4px] px-[8px] rounded-[20px] text-white flex items-center font-bold text-[20px]"
+                  >
+                    3.9
+                    <img
+                      class="ms-1"
+                      src="../images/for-product-details-page/product/star.svg"
+                      alt="star"
+                    />
+                  </span>
+                  <span class="text-[#878787] text-[14px] font-semibold"
+                    >39,388 ratings and 3,156 reviews</span
+                  >
+                </div>
+                <div>
+                  <button
+                    style="
+                      padding: 8px 15px;
+                      box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.26);
+                    "
+                    class="bg-[#2874f0] text-white text-[14px] font-bold"
+                  >
+                    Rate Product
+                  </button>
+                </div>
+              </div>
+              <h1 class="text-[15px] mt-8 font-semibold text-[#212121]">
+                Images uploaded by customers:
+              </h1>
+              <div
+                id="customerUploadImgsContainer"
+                class="flex flex-wrap gap-1.5 mt-5 mb-3 relative"
+              >
+                <div
+                  style="background-color: rgba(0, 0, 0, 0.535)"
+                  class="absolute flex items-center justify-center left-0 bottom-0 font-bold text-white text-[16px] leading-5 w-[70px] h-[70px]"
+                >
+                  <h1>+ 181</h1>
+                </div>
+              </div>
+              <div id="reviews-container">
+                <div class="border-b-2 border-gray-300 py-6">
+                  <h2 class=" flex items-center gap-2">
+                    <span style="padding: 2px 7px;"
+                      class="bg-[#ff6161]  rounded-[12px] text-white flex items-center font-bold text-[12px]"
+                    >
+                      1
+                      <img
+                        class="ms-1"
+                        src="../images/for-product-details-page/product/star.svg"
+                        alt="star"
+                      />
+                    </span>
+                    <span class="text-[#212121] text-[14px]">Bad product </span>
+                  </h2>
+                  <p class="text-[#212121] text-[14px] mt-1">Chiting customer</p>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Sumesh  Mohapatra</span>
+                      <span class="ms-3">11 months ago</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>13</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>0</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer, Dhenkanal District</span>
+                  
+                  </div>
+                </div>
+                <div class="border-b-2 border-gray-300 py-6">
+                  <h2 class=" flex items-center gap-2">
+                    <span style="padding: 2px 7px;"
+                      class="bg-[#ff6161]  rounded-[12px] text-white flex items-center font-bold text-[12px]"
+                    >
+                      1
+                      <img
+                        class="ms-1"
+                        src="../images/for-product-details-page/product/star.svg"
+                        alt="star"
+                      />
+                    </span>
+                    <span class="text-[#212121] text-[14px]">There is a huge size difference.</span>
+                  </h2>
+                  <p class="text-[#212121] text-[14px] mt-1">They have all the socks of different sizes. <br> Some will fit and most of them are small in size. <br> My foot size is 8 and only one pair of socks fitted me.</p>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Anish Sharma</span>
+                      <span class="ms-3">11 months ago</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>11</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>0</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer, Kolkata</span>
+                  
+                  </div>
+                </div>
+                <div class="border-b-2 border-gray-300 py-6">
+                  <h2 class=" flex items-center gap-2">
+                    <span style="padding: 2px 7px;"
+                      class="bg-[#ff6161]  rounded-[12px] text-white flex items-center font-bold text-[12px]"
+                    >
+                      1
+                      <img
+                        class="ms-1"
+                        src="../images/for-product-details-page/product/star.svg"
+                        alt="star"
+                      />
+                    </span>
+                    <span class="text-[#212121] text-[14px]">Very poor </span>
+                  </h2>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Supriya Singh</span>
+                      <span class="ms-3">11 months ago</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>13</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>0</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer, Hubballi</span>
+
+                    <h1 class="text-[#2874f0] mt-6 text-[13px] font-semibold">All 3156 reviews <img class="inline-block ms-2" src="../images/for-product-details-page/customerupload/rightangle.svg" alt="right-angle"></h1>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Question & Answers -->
+            <div class="mt-6">
+              <div
+                class="flex justify-between items-center"
+              >
+                <h1 class="select-none text-[24px] font-bold text-[#212121]">
+                  Questions and Answers
+                </h1>
+                
+                  <div id="plus-btn" class="transition-all ease-in-out">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                  </div>
+    
+              </div>
+              <div id="question&answercontainer">
+                <div class="py-6 border-b-2 border-gray-300">
+                  <div class="text-[16px] mb-2 text-[#212121] font-semibold">
+                    <span>Q:</span>
+                    <span>Is it suitable for size 9</span>
+                  </div>
+                  <div class="text-[14px] text-[#212121]">
+                    <span>A:</span>
+                    <span>No</span>
+                  </div>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Himanshu Panwar</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>34</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>13</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer</span>
+                  
+                  </div>
+                </div>
+                <div class="py-6 border-b-2 border-gray-300">
+                  <div class="text-[16px] mb-2 text-[#212121] font-semibold">
+                    <span>Q:</span>
+                    <span>This socks use for girls</span>
+                  </div>
+                  <div class="text-[14px] text-[#212121]">
+                    <span>A:</span>
+                    <span>Yes</span>
+                  </div>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Aman Kuma</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>10</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>2</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer</span>
+                  
+                  </div>
+                </div>
+                <div class="py-6">
+                  <div class="text-[16px] mb-2 text-[#212121] font-semibold">
+                    <span>Q:</span>
+                    <span>How is the quality 
+                      Are those suitable for the 8 size?</span>
+                  </div>
+                  <div class="text-[14px] text-[#212121]">
+                    <span>A:</span>
+                    <span>Definitely go on, it's very good specially the royal blue color</span>
+                  </div>
+                  <div class="text-[#878787] mt-3 flex justify-between items-center ">
+                    <div class="text-[12px]">
+                      <span class=" font-bold">Navjot Singh</span>
+                    </div>
+                    <ul class="flex items-center gap-7">
+                      <li >
+                        <i class="fa-solid fa-thumbs-up"></i>
+                        <span>15</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-thumbs-down"></i>
+                        <span>16</span>
+                      </li>
+                      <li>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                      </li>
+                    </ul>
+                  </div>
+                  <div  class="text-[#878787]">
+                    <i class="fa-solid fa-circle-check text-[14px]"></i>
+                    <span class="text-[12px]">Certified Buyer</span>
+                  
+                    <h1 class="text-[#2874f0] mt-6 text-[13px] font-semibold">All questions <img class="inline-block ms-2" src="../images/for-product-details-page/customerupload/rightangle.svg" alt="right-angle"></h1>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
         </div>
-      </section>
+      </div>
+    </section>
 
+    <!-- frequently bought together -->
+    <section  class="mt-3 px-[32px] pt-[32px] pb-[25px] bg-white relative">
+      <h1   class=" text-[24px] text-[#212121] font-bold ">Frequently Bought Together</h1>
+      <div  class=" flex gap-4 overflow-hidden justify-between scroll-smooth pt-6 p-3">
+        <div id="product-container" class="flex  items-center gap-2">
+          <div id="card" class="relative">
+            <div class=" absolute right-1"><i class="fa-solid fa-square-check text-blue-500 text-3xl"></i></div>
+            <img class="w-[204px] h-[245px] object-contain" src="../images/for-product-details-page/products/mainprouct.webp" alt="main">
+            <div>
+              <h1 style="color: rgb(135, 135, 135);" class=" font-semibold text-[14px]">Swagr</h1>
+              <div class=" flex items-center my-1">
+                <h2 class=" text-[rgb(33, 33, 33)] text-[14px]">Men Solid Ankle ...</h2>
+                <img class=" w-[66px]" src="../images/for-productpage/products/assured.png" alt="assured">
+              </div>
+              <div>
+                <span class=" text-[16px] text-[black] font-semibold"><span>₹</span id="price">179</span>
+                <span style="color:rgb(135, 135, 135)" class=" text-[14px] ms-[8px] line-through">₹1,200</span>
+                <span style=" color: rgb(56, 142, 60);" class="text-[13px] font-bold ms-[8px]">85% off</span>
+              </div>
+              <div class=" mt-2">
+                <span style="color: rgb(135, 135, 135);" class=" me-[6px] font-semibold text-[16px] ">Size :</span>
+                <span style="color: rgb(33, 33, 33);" class=" text-[16px]">Free</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-plus text-xl"></i>
+          </div>
+          <div id="card" class="relative">
+            <div class=" absolute right-1"><i class="fa-solid fa-square-check text-blue-500 text-3xl"></i></div>
+            <img class="w-[204px] h-[245px] object-contain" src="../images/for-product-details-page/products/l-2-1014-tmsfashion-original-imagh58jvr6rzzvb.webp" alt="main">
+            <div>
+              <h1 style="color: rgb(135, 135, 135);" class=" font-semibold text-[14px]">tmsfashion</h1>
+              <div class=" flex items-center my-1">
+                <h2 class=" text-[rgb(33, 33, 33)] text-[14px]">Pack of 2 Men Ve ...</h2>
+                <img class=" w-[66px]" src="../images/for-productpage/products/assured.png" alt="assured">
+              </div>
+              <div>
+                <span class=" text-[16px] text-[black] font-semibold"><span>₹</span id="price">333</span>
+              </div>
+              <div class=" mt-2">
+                <span style="color: rgb(135, 135, 135);" class=" me-[6px] font-semibold text-[16px] ">Size :</span>
+                <span style="color: rgb(33, 33, 33);" class=" text-[16px]">S, M, L, XL, XXL</span>
+              </div>
+            </div>
+          </div>
+          <div>
+            <i class="fa-solid fa-plus text-xl"></i>
+          </div>
+          <div id="card" class="relative">
+            <div class=" absolute right-1"><i class="fa-solid fa-square-check text-blue-500 text-3xl"></i></div>
+            <img class="w-[204px] h-[245px] object-contain" src="../images/for-product-details-page/products/mans-pure-cotton-handkerchiefs-mans-white-hanky-1-magenta-original-imaggsvwqxacgfbg.webp" alt="main">
+            <div>
+              
+              <h2 class=" text-[rgb(33, 33, 33)] my-1 text-[14px]">magenta MANS PUR... ...</h2>
+               
+              <div>
+                <span class=" text-[16px] text-[black] font-semibold"><span>₹</span id="price">225</span>
+                
+              </div>
+              <div class=" mt-2">
+                <span style="color: rgb(135, 135, 135);" class=" me-[6px] font-semibold text-[16px] ">Pack of :</span>
+                <span style="color: rgb(33, 33, 33);" class=" text-[16px]">3, 4, 6, 8, 10, 12</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id=" calculate-area" class=" min-w-[384px]">
+            <div>
+              <h1 style="color: rgb(135, 135, 135);" class="text-[13px] font-semibold">Price Summary</h1>
 
+              <div class=" my-6 py-6 border-y-2 border-dashed border-gray-400">
+                <div class=" flex justify-between items-center text-black text-[20px]">
+                  <h1>Main Product selected</h1>
+                  <div>₹161</div>
+                </div>
+                <div class="flex justify-between items-center text-black text-[20px] mt-7">
+                  <h1>2 Addons selected</h1>
+                  <div><span>+</span>₹558</div>
+                </div>
+              </div>
+              <div class="flex justify-between items-center text-black text-[20px] font-semibold">
+                <div>Total</div>
+                <div>₹719</div>
+              </div>
+            </div>
+            <button style="background-color: rgb(255, 159, 0);" class="text-white text-[16px] uppercase w-full p-[16px] rounded-[2px] mt-[3.5rem] font-semibold">
+              Add 3 Items to Cart
+            </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- good things about site -->
+    <section class="mt-3">
+      <div>
+        <img src="../images/for-product-details-page/product/goodthingsaboutside.webp" alt="goodpoints">
+      </div>
+    </section>
+
+    <!-- You might be interested -->
+    <section  id="customer-interest-section" class="mt-3 p-[32px] bg-white relative">
+      <h1   class=" text-[24px] text-[#212121] font-bold ">You might be interested in</h1>
+      <div id="card-container" class=" flex gap-4 overflow-hidden scroll-smooth pt-6 p-3">
+       <!-- {{}} -->
+       <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px;box-shadow: 7px 0px 8px -4px #888888;"  type="button" class="top-[45%] transition ease-in-out  left-[32px] absolute w-[44px] bg-white h-[104px]  font-bold text-[#212121] z-30">
+        <span class="">
+          <i  class="fa fa-angle-left text-3xl"></i>
+        </span>
+    </button>
+    <button id="next-btn"  style="border-radius: 5px 0px 0px 5px;box-shadow: -6px 1px 9px 0px #e8e6e6;"  type="button" class="top-[45%] transition ease-in-out right-[32px] absolute w-[44px] bg-white h-[104px] font-bold text-[#212121] z-30" >
+        <span class="">
+          <i  class="fa fa-angle-right text-3xl"></i>
+        </span>
+    </button>   
+      </div>
+    </section>
+
+    <!-- Similar Products -->
+    <section  id="similar-products-section" class="mt-3 px-[32px] pt-[32px] pb-[25px] bg-white relative">
+      <h1   class=" text-[24px] text-[#212121] font-bold ">Similar Products</h1>
+      <div id="similar-products-container" class=" flex gap-4 overflow-hidden scroll-smooth pt-6 p-3">
+       <!-- {{}} -->
+       <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px;box-shadow: 8px 2px 10px -1px rgba(0,0,0,.3)"  type="button" class="top-[45%] transition ease-in-out  left-[32px] absolute w-[44px] bg-white h-[104px]  font-bold text-[#212121] z-30">
+        <span class="">
+          <i  class="fa fa-angle-left text-3xl"></i>
+        </span>
+    </button>
+    <button id="next-btn"  style="border-radius: 5px 0px 0px 5px;box-shadow: -6px 2px 10px -1px rgba(0,0,0,.3)"  type="button" class="top-[45%] transition ease-in-out right-[32px] absolute w-[44px] bg-white h-[104px] font-bold text-[#212121] z-30" >
+        <span class="">
+          <i  class="fa fa-angle-right text-3xl"></i>
+        </span>
+    </button>   
+      </div>
+    </section>
+
+  <!-- Recent view -->
+
+  <section  id="recent-view-section" class="mt-3 px-[32px] pt-[32px] pb-[25px] bg-white relative">
+    
+    <h1   class=" text-[24px] text-[#212121] font-bold ">Recently Viewed</h1>
+    <div id="recent-view-container" class=" flex gap-4 overflow-hidden scroll-smooth pt-6 p-3">
+     <!-- {{}} -->
+     <button id="pre-btn"  style="border-radius: 0px 5px 5px 0px;box-shadow: 8px 2px 10px -1px rgba(0,0,0,.3)"  type="button" class="top-[45%] transition ease-in-out  left-[32px] absolute w-[44px] bg-white h-[104px]  font-bold text-[#212121] z-30">
+      <span class="">
+        <i  class="fa fa-angle-left text-3xl"></i>
+      </span>
+  </button>
+  <button id="next-btn"  style="border-radius: 5px 0px 0px 5px;box-shadow: -6px 2px 10px -1px rgba(0,0,0,.3)"  type="button" class="top-[45%] transition ease-in-out right-[32px] absolute w-[44px] bg-white h-[104px] font-bold text-[#212121] z-30" >
+      <span class="">
+        <i  class="fa fa-angle-right text-3xl"></i>
+      </span>
+  </button>   
+    </div>
+  </section>
+
+  <footer class=" bg-[#212135] mt-5 text-white pt-8">
+    <div class="flex">
+      <div class="w-[60%] flex justify-center gap-7 ">
+        <div class=" text-xs">
+          <h2 class="text-[#878787] text-xs mb-3">ABOUT</h2>
+          <ul class="font-semibold flex-col gap-1 flex">
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Flipkart Stories</a></li>
+            <li><a href="#">Corporate Information</a></li>
+          </ul>
+        </div>
+        <div class=" text-xs">
+          <h2 class="text-[#878787] text-xs mb-3">GROUP COMPANIES</h2>
+          <ul class="font-semibold flex-col gap-1 flex">
+            <li><a href="#">Myntra</a></li>
+            <li><a href="#">Flipkart Wholesale</a></li>
+            <li><a href="#">Cleartrip</a></li>
+            <li><a href="#">Shopsy</a></li>
+          </ul>
+        </div>
+        <div class=" text-xs">
+          <h2 class="text-[#878787] text-xs mb-3">HELP</h2>
+          <ul class="font-semibold flex-col gap-1 flex">
+            <li><a href="#">Payments</a></li>
+            <li><a href="#">Flipkart Wholesale</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Cancellation & Returns</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Report Infringement</a></li>
+          </ul>
+        </div>
+        <div class=" text-xs">
+          <h2 class="text-[#878787] text-xs mb-3">CONSUMER POLICY</h2>
+          <ul class="font-semibold flex-col gap-1 flex">
+            <li><a href="#">Cancellation & Returns</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Sitemap</a></li>
+            <li><a href="#">Grievance Redressal</a></li>
+            <li><a href="#">EPR Compliance</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class=" flex gap-3 justify-center">
+        <div class="border-[#878787] border-l ps-8">
+          <h2 class="text-[#878787] text-xs mb-3">Mail Us:</h2>
+         <ul class="font-semibold flex-col gap-1 flex text-xs">
+            <li>Flipkart Internet Private Limited, </li>
+            <li> Buildings Alyssa, Begonia & </li>
+            <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+            <li> Bengaluru, 560103,</li>
+            <li> Karnataka, India</li>
+          </ul>
+          <h2 class="text-[#878787] text-xs my-3">Social:</h2>
+            <div>
+              <ul class="flex gap-3">
+                <li>
+                  <a href="#">
+                    <img src="../images/for-homepage/side-images/fab.svg" alt="fab">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../images/for-homepage/side-images/xx.svg" alt="x">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="../images/for-homepage/side-images/youtube.svg" alt="youtube">
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div>
+          <h2 class="text-[#878787] text-xs mb-3">Registered Office Address:</h2>
+         <ul class="font-semibold flex-col gap-1 flex text-xs">
+            <li>Flipkart Internet Private Limited, </li>
+            <li> Buildings Alyssa, Begonia & </li>
+            <li> Outer Ring Road, Devarabeesanahalli Village,</li>
+            <li> Bengaluru, 560103,</li>
+            <li> Karnataka, India</li>
+            <li> CIN : U51109KA2012PTC066107 </li>
+            <li> Telephone: <a class="text-blue-600" href="tel:044-45614700">044-45614700</a></li>
+          </ul>
+    
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-around p-4 border-t border-[#878787] mt-10">
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <img src="../images/for-homepage/side-images/footer-shop.svg" alt="cart" />
+        <span class="tracking-wide text-xs">Become a Seller</span>
+      </div>
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <img src="../images/for-homepage/side-images/footer-advertise.svg" alt="advertise" />
+        <span class="tracking-wide text-xs">Advertise</span>
+      </div>
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <img src="../images/for-homepage/side-images/footer-gift.svg" alt="gift" />
+        <span class="tracking-wide text-xs">Gift Cards</span>
+      </div>
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <img src="../images/for-homepage/side-images/footerHelp.svg" alt="help" />
+        <span class="tracking-wide text-xs">Help Center</span>
+      </div>
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <span class="tracking-wide text-xs">© 2007-2024 Flipkart.com</span>
+      </div>
+      <div class="rounded-md py-2 flex gap-2 justify-center items-center">
+        <img src="../images/for-homepage/side-images/footer-payment.svg" alt="payment" />
+      </div>
+    </div>
+  </footer>
     <script type="module" src="../js/productDetail.js"></script>
- 
   </body>
 </html>
